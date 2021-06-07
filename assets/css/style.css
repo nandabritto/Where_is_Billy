@@ -47,15 +47,10 @@ img {
     background-color: var(--opal);
 }
 
-.flex-column{
-    display:flex;
+.flex-center {
     flex-direction: column;
 }
 
-.flex-center{
-    justify-content: center;
-    align-items: center;
-}
 .btn {
     font-size: 2rem;
     padding: 20px;
@@ -70,7 +65,7 @@ img {
 
 @media screen and (max-width: 1024px) {
 
-    
+/*quiz container */
 
     .aligned {
         width: 85%;
@@ -84,21 +79,29 @@ img {
 
 @media screen and (max-width: 700px) {
 
+/*header*/ 
+
     h1 {
         font-size: 1.3em;
     }
-    h2{
-        font-size:1rem;
+
+    h2 {
+        font-size: 1rem;
     }
-img{
-    height: 15vh;
-}
+
+    img {
+        height: 15vh;
+    }
+
+/*quiz container */
+
     .aligned {
         width: 80%;
     }
 
-    .btn{
+    .btn {
         width: 5rem;
-        padding:5%;
+        padding: 5%;
     }
+    
 }
