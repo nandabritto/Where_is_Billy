@@ -4,8 +4,8 @@
     --genoa: #29726C;
     --denim: #0d6db7;
     --java: #2F918B;
-    --opal:#A2BEBB;
-    --black:#000000;
+    --opal: #A2BEBB;
+    --black: #000000;
 
 }
 
@@ -15,44 +15,90 @@
 }
 
 h1 {
-    font-size: 3rem;
-    color:var(--black);
+    font-size: 3em;
+    color: var(--black);
+    text-align: center;
 }
-/*header*/ 
+
+/*header*/
 
 .aligned {
     display: flex;
     align-items: center;
     margin: 1% 20%;
+    width: 50%;
+    margin: 0 auto;
 }
-   
+
 img {
-    width: 18vw;
     height: 20vh;
     padding: 10%;
 }
 
-/* quiz container*/ 
+/* quiz container*/
 
 .container {
     width: 80vw;
-    height: 30vw;
-    margin:auto;
-    display:flex;
+    height: 50vw;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--opal);
+    background-color: var(--opal);
 }
 
-.btn{
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.btn {
     font-size: 2rem;
     padding: 20px;
-    width: 100px;
+    width: 30rem;
     text-align: center;
     text-decoration: none;
     color: var(--black);
     background-color: var(--java);
     border-radius: 25px;
-    margin: 10% 35%;
     display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+
+    
+
+    .aligned {
+        width: 85%;
+    }
+
+    .btn {
+        font-size: 1em;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 1.3em;
+    }
+    h2{
+        font-size:1rem;
+    }
+img{
+    height: 15vh;
+}
+    .aligned {
+        width: 80%;
+    }
+
+    .btn{
+        width: 5rem;
+        padding:5%;
+    }
 }
