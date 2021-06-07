@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 :root {
-    genoa: #29726C;
-    denim: #0d6db7;
-    java: #2F918B;
-    opal:#A2BEBB;
+    --genoa: #29726C;
+    --denim: #0d6db7;
+    --java: #2F918B;
+    --opal:#A2BEBB;
+    --black:#000000;
+
 }
 
+* {
+    box-sizing: border-box;
+    font: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color:var(--black);
+}
+
+.container {
+    width: 100vw;
+    height: 50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--opal);
+}
+
+.btn{
+    font-size: 2rem;
+    padding: 20px;
+    width: 60px;
+    text-align:center;
+    text-decoration:none;
+    color: var(--black);
+    background-color: var(--java);
+    border-radius:25px;
+}
