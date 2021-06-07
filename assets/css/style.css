@@ -15,9 +15,13 @@
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     color: var(--black);
     text-align: center;
+}
+
+p {
+    font-size: 1.5rem
 }
 
 /*header*/
@@ -25,8 +29,7 @@ h1 {
 .aligned {
     display: flex;
     align-items: center;
-    margin: 1% 20%;
-    width: 50%;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -38,9 +41,9 @@ img {
 /* quiz container*/
 
 .container {
-    width: 80vw;
-    height: 50vw;
-    margin: 0 auto;
+    width: 60vw;
+    max-width: 1000px;
+    margin: 2% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,45 +66,83 @@ img {
     display: inline-block;
 }
 
+
+/* game page*/
+
+#game {
+    width: 90%;
+    padding: 5%;
+}
+
+.choice-container {
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--genoa);
+    color: var(--opal);
+    font-size: 2rem;
+    margin: 2% auto;
+}
+
+.choice-options,
+.choice-text {
+    color: white;
+    padding: 0 5%;
+}
+
 @media screen and (max-width: 1024px) {
 
-/*quiz container */
-
-    .aligned {
-        width: 85%;
+    /*quiz container */
+    .container {
+        width: 80vw;
     }
 
     .btn {
         font-size: 1em;
         width: 15rem;
     }
-}
 
-@media screen and (max-width: 700px) {
-
-/*header*/ 
-
-    h1 {
-        font-size: 1.3em;
+    #game {
+        width: 90%;
     }
 
-    h2 {
+    .choice-container {
+        width: 100%;
+    }
+
+    .choice-options,
+    .choice-text {
         font-size: 1rem;
     }
 
-    img {
-        height: 15vh;
-    }
+    @media screen and (max-width: 700px) {
 
-/*quiz container */
+        /*header*/
 
-    .aligned {
-        width: 80%;
-    }
+        h1 {
+            font-size: 1.3em;
+        }
 
-    .btn {
-        width: 5rem;
-        padding: 5%;
+        h2 {
+            font-size: 1rem;
+        }
+
+        img {
+            height: 15vh;
+        }
+
+        /*quiz container */
+
+
+
+        .aligned {
+            width: 80%;
+        }
+
+        .btn {
+            width: 5rem;
+            padding: 5%;
+        }
+
     }
-    
 }
