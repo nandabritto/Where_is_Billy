@@ -1,5 +1,13 @@
-const question = document.querySelector("#question");
-const choices = document.querySelector('.choice-text');
+const start = document.getElementById('start-button');
+const questionElement = document.getElementById('question');
+const questionContainer = document.getElementById('quiz');
+const choiceButtons = document.getElementById('choice-container');
+
+
+
+
+
+
 
 let questions = [{
         question: 'test1',
