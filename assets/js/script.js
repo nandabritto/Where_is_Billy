@@ -1,16 +1,18 @@
-const start = document.getElementById('start-button');
+const startButton = document.getElementById('start-button');
 const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 
-start.addEventListener('click', startQuiz )
+startButton.addEventListener('click', startQuiz )
 
-function start() {
-    start.classList.add('hide')
-    shuffleQuestions = questions.sort(() => Math.random() .5)
+function startQuiz() {
+    startButton.classList.add('hide')
+    shuffleQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainer.classList.remove('hide')
 }
+
+
 
 
 
