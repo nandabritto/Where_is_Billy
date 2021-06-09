@@ -3,7 +3,14 @@ const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 
+start.addEventListener('click', startQuiz )
 
+function start() {
+    start.classList.add('hide')
+    shuffleQuestions = questions.sort(() => Math.random() .5)
+    currentQuestionIndex = 0
+    questionContainer.classList.remove('hide')
+}
 
 
 

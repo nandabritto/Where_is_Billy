@@ -51,11 +51,6 @@ img {
     background-color: var(--opal);
 }
 
-/*
-.flex-center {
-    flex-direction: column;
-}
-*/
 #start-button {
     width: 200px;
     font-weight: 400;
@@ -84,6 +79,9 @@ img {
     margin: 2% auto;
 }
 
+.hide {
+    display:none;
+}
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
