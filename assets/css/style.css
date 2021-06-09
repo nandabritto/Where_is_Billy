@@ -56,7 +56,7 @@ img {
     font-weight: 400;
 }
 
-.button {
+.button, .btn {
     font-size: 1.3em;
     padding: 20px;
     width: 400px;
