@@ -51,13 +51,14 @@ img {
     background-color: var(--opal);
 }
 
+/*
 .flex-center {
     flex-direction: column;
 }
-
-#start-button{
-    width:200px;
-    font-weight:400;
+*/
+#start-button {
+    width: 200px;
+    font-weight: 400;
 }
 
 .button {
@@ -86,26 +87,19 @@ img {
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
-    .container {
+
+    #start-container,
+    #quiz-container {
         width: 80vw;
     }
 
-    .btn {
+    .button {
         font-size: 1em;
-        width: 15rem;
-    }
 
-    #game {
-        width: 90%;
     }
 
     .choice-container {
         width: 100%;
-    }
-
-    .choice-options,
-    .choice-text {
-        font-size: 1rem;
     }
 
     @media screen and (max-width: 700px) {
@@ -126,13 +120,11 @@ img {
 
         /*quiz container */
 
-        .aligned {
-            width: 80%;
-        }
+        .button,
+        #start-button {
+            width: 65vw;
+            margin: 3% auto;
 
-        .btn {
-            width: 5rem;
-            padding: 5%;
         }
 
     }
