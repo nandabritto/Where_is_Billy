@@ -2,9 +2,13 @@ const startButton = document.getElementById('start-button');
 const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
+const nextButton = document.getElementById('next-button')
 
 startButton.addEventListener('click', startQuiz)
-
+nextButton.addEventListener('click', () => {
+    currentQuestion++
+    nextQuestion()
+ })
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
@@ -17,7 +21,7 @@ function startQuiz() {
 
 // initialize page for new question.
 function nextQuestion() {
-//    resetState()
+    resetQuestion()
     showQuestion(shuffleQuestions[currentQuestion])
 }
 
@@ -32,6 +36,13 @@ function showQuestion(pQuestion) {
     })
 }
 
+//
+function resetQuestion() {
+    nextButton.classList.add('hide')
+    while (choiceButtons.firstChild) {
+        choiceButtons.removeChild(choiceButtons.firstChild)
+    }
+}
 
 // Question Bank
 let questionBank = [{
@@ -42,6 +53,16 @@ let questionBank = [{
         },
         {
             text: '22',
+            correct: false
+        }
+    ],
+    question: 'What is 22 + 22?',
+    answers: [{
+            text: '44',
+            correct: true
+        },
+        {
+            text: '32',
             correct: false
         }
     ]
