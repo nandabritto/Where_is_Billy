@@ -3,6 +3,7 @@ const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button')
+const startQuestion = document.getElementById('start-question')
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -13,6 +14,7 @@ nextButton.addEventListener('click', () => {
 
 function startQuiz() {
     startButton.classList.add('hide')
+    startQuestion.classList.add('hide')
     questionContainer.classList.remove('hide')
     shuffleQuestions = questionBank.sort(() => Math.random() - .5)
     currentQuestion = 0
@@ -36,13 +38,14 @@ function showQuestion(pQuestion) {
     })
 }
 
-//
+// Add hide on next button and clean buttons from previous question
 function resetQuestion() {
     nextButton.classList.add('hide')
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild)
     }
 }
+
 
 // Question Bank
 let questionBank = [{

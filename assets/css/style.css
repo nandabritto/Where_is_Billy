@@ -43,17 +43,21 @@ img {
 #start-container,
 #quiz-container {
     width: 60vw;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 2% auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--opal);
+    border-radius: 25px;
 }
 
-#start-button {
+#start-button,
+#next-button {
     width: 200px;
     font-weight: 400;
+    background-color: #CD000B;
+    color: white;
 }
 
 .button {
@@ -80,8 +84,15 @@ img {
 }
 
 .hide {
-    display:none;
+    display: none;
 }
+
+#question {
+    font-size: 2em;
+    text-align: center;
+    margin: 5%;
+}
+
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
@@ -122,8 +133,11 @@ img {
         #start-button {
             width: 65vw;
             margin: 3% auto;
-
         }
 
+        #question {
+            font-size: 1em;
+            
+        }
     }
 }
