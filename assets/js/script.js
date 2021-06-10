@@ -9,7 +9,7 @@ startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestion++
     nextQuestion()
- })
+})
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
@@ -45,28 +45,53 @@ function resetQuestion() {
         choiceButtons.removeChild(choiceButtons.firstChild)
     }
 }
+function selectedAnswer (a) {
+    const selectedButton = a.target
+    const correct = selectedButton.dataset.correct
+    answerStatus(document.body,correct)
+    Array.from(choiceButtons.children).forEach(button => {
+        answerStatus(button,button.dataset.correct)
+    })
+
+    if (shuffleQuestions.length > currentQuestion + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        startButton.classList.remove('hide')
+    }
+}
 
 
 // Question Bank
-let questionBank = [{
-    question: 'What is 2 + 2?',
-    answers: [{
-            text: '4',
-            correct: true
-        },
-        {
-            text: '22',
-            correct: false
-        }
-    ],
-    question: 'What is 22 + 22?',
-    answers: [{
-            text: '44',
-            correct: true
-        },
-        {
-            text: '32',
-            correct: false
-        }
-    ]
-}]
+const questionBank = [{
+        question: 'Where is Cristo Redentor?',
+        answers: [{
+                text: 'Rio de Janeiro',
+                correct: true
+            },
+            {
+                text: 'Sao Paulo',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: 'Where can I find Torre de Belem?',
+        answers: [{
+                text: 'Lisbon',
+                correct: true
+            },
+            {
+                text: 'Porto',
+                correct: false
+            },
+            {
+                text: 'London',
+                correct: false
+            },
+            {
+                text: 'Dublin',
+                correct: false
+            }
+        ]
+    }
+]
