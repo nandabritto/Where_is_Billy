@@ -76,9 +76,9 @@ function selectedAnswer(a) {
     }
 
     if (shuffleQuestions.length > currentQuestion +1) {
-       
+        nextButton.classList.remove('hide')
     } else {
-        scorePopupElement.classList.remove('hide')
+        //function to open score-popup with resetand hide game div. 
     }
 }
 
