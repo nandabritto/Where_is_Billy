@@ -94,22 +94,24 @@ img {
 }
 
 .correct {
-    background-color:green;
+    background-color: green;
 }
 
-.wrong  {
+.wrong {
     background-color: #CD000B;
 }
 
 #popup {
     z-index: 0;
     position: sticky;
-    width: 50%;
+    width: 50vw;
+    max-width: 500px;
     margin: 0 auto;
-    background-color: var(--opal);
-    color: (var--black);
+    background-color: red;
+    opacity: 60%;
     top: 30%;
-  }
+}
+
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
@@ -154,7 +156,7 @@ img {
 
         #question {
             font-size: 1em;
-            
+
         }
     }
 }

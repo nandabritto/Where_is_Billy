@@ -3,8 +3,10 @@ const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button')
+const scoreButton = document.getElementById('score-button')
 const startQuestion = document.getElementById('start-question')
-const questionPopupElement = document.getElementById('popup')
+const questionPopupElement = document.getElementById('popup-incorrect')
+const scorePopupElement = document.getElementById('popup-incorrect')
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -31,6 +33,8 @@ function nextQuestion() {
 //Close incorrect answer div onClick
 function closeDiv() {
     questionPopupElement.classList.add('hide')
+    nextButton.classList.remove('hide')
+    
 }
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
@@ -71,10 +75,10 @@ function selectedAnswer(a) {
         questionPopupElement.addEventListener('click', closeDiv)
     }
 
-    if (shuffleQuestions.length > currentQuestion) {
-        nextButton.classList.remove('hide')
+    if (shuffleQuestions.length > currentQuestion +1) {
+       
     } else {
-        startButton.classList.remove('hide')
+        scorePopupElement.classList.remove('hide')
     }
 }
 
