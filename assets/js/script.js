@@ -4,6 +4,7 @@ const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button')
 const startQuestion = document.getElementById('start-question')
+const questionPopupElement = document.getElementById('popup')
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -27,14 +28,24 @@ function nextQuestion() {
     showQuestion(shuffleQuestions[currentQuestion])
 }
 
+//Close incorrect answer div onClick
+function closeDiv() {
+    questionPopupElement.classList.add('hide')
+}
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
     questionElement.innerText = pQuestion.question
+    questionPopupElement.innerText = pQuestion.correctText
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button')
         answerButton.innerText = answer.text
         answerButton.classList.add('button')
         choiceButtons.appendChild(answerButton)
+
+        if (answer.correct) {
+            answerButton.dataset.correct = answer.correct
+        }
+        answerButton.addEventListener('click', selectedAnswer)
     })
 }
 
@@ -45,18 +56,33 @@ function resetQuestion() {
         choiceButtons.removeChild(choiceButtons.firstChild)
     }
 }
-function selectedAnswer (a) {
+
+function selectedAnswer(a) {
     const selectedButton = a.target
     const correct = selectedButton.dataset.correct
-    answerStatus(document.body,correct)
+
     Array.from(choiceButtons.children).forEach(button => {
-        answerStatus(button,button.dataset.correct)
+        answerStatus(button, button.dataset.correct)
     })
 
-    if (shuffleQuestions.length > currentQuestion + 1) {
+    //show popup with correct answer and close it with a click
+    if (!correct) {
+        questionPopupElement.classList.remove('hide')
+        questionPopupElement.addEventListener('click', closeDiv)
+    }
+
+    if (shuffleQuestions.length > currentQuestion) {
         nextButton.classList.remove('hide')
     } else {
         startButton.classList.remove('hide')
+    }
+}
+
+function answerStatus(element, correct) {
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
     }
 }
 
@@ -72,7 +98,8 @@ const questionBank = [{
                 text: 'Sao Paulo',
                 correct: false
             }
-        ]
+        ],
+        correctText: 'teste teste teste test teste'
     },
     {
         question: 'Where can I find Torre de Belem?',
@@ -92,6 +119,27 @@ const questionBank = [{
                 text: 'Dublin',
                 correct: false
             }
-        ]
+        ],
+        correctText: 'teste teste teste test teste',
+
+        question: 'Where can I find Spire?',
+        answers: [{
+                text: 'Lisbon',
+                correct: false
+            },
+            {
+                text: 'Porto',
+                correct: false
+            },
+            {
+                text: 'London',
+                correct: false
+            },
+            {
+                text: 'Dublin',
+                correct: true
+            }
+        ],
+        correctText: 'teste teste teste test teste'
     }
 ]

@@ -93,6 +93,23 @@ img {
     margin: 5%;
 }
 
+.correct {
+    background-color:green;
+}
+
+.wrong  {
+    background-color: #CD000B;
+}
+
+#popup {
+    z-index: 0;
+    position: sticky;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--opal);
+    color: (var--black);
+    top: 30%;
+  }
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
