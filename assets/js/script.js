@@ -7,6 +7,7 @@ const scoreButton = document.getElementById('score-button')
 const startQuestion = document.getElementById('start-question')
 const questionPopupElement = document.getElementById('popup-incorrect')
 const scorePopupElement = document.getElementById('popup-incorrect')
+const questionImageElement = document.getElementById('question-img')
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -44,6 +45,9 @@ function closeDiv() {
 function showQuestion(pQuestion) {
     questionElement.innerText = pQuestion.question
     questionPopupElement.innerText = pQuestion.correctText
+    var img = new Image()
+    img.src = 'assets/images/teste.jpg'
+    document.getElementById('question-img').appendChild(img)
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button')
         answerButton.innerText = answer.text

@@ -33,7 +33,7 @@ p {
     margin: 0 auto;
 }
 
-img {
+.header-img  {
     height: 20vh;
     padding: 10%;
 }
@@ -70,7 +70,7 @@ img {
     background-color: var(--java);
     border-radius: 25px;
     display: block;
-    margin: 4%;
+    margin: 2% auto;
 }
 
 .choice-container {
@@ -87,10 +87,10 @@ img {
     display: none;
 }
 
-#question {
+#question, #question-img {
     font-size: 2em;
     text-align: center;
-    margin: 5%;
+    margin: 2%;
 }
 
 .correct {
