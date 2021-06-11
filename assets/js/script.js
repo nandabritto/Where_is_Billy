@@ -34,7 +34,7 @@ function nextQuestion() {
 function closeDiv() {
     questionPopupElement.classList.add('hide')
     nextButton.classList.remove('hide')
-    
+
 }
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
@@ -74,12 +74,15 @@ function selectedAnswer(a) {
         questionPopupElement.classList.remove('hide')
         questionPopupElement.addEventListener('click', closeDiv)
     }
-
-    if (shuffleQuestions.length > currentQuestion +1) {
+    //show nextbutton if the answer is correct
+    if (correct) {
         nextButton.classList.remove('hide')
-    } else {
-        //function to open score-popup with resetand hide game div. 
     }
+    // if (shuffleQuestions.length > currentQuestion +1) {
+    // nextButton.classList.remove('hide')
+    //} else {
+    //function to open score-popup with resetand hide game div. 
+    //}
 }
 
 function answerStatus(element, correct) {
