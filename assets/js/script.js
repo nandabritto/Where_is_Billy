@@ -10,9 +10,13 @@ const scorePopupElement = document.getElementById('popup-incorrect')
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
-    currentQuestion++
+    if (shuffleQuestions.length > currentQuestion + 1) {
+        currentQuestion++
+    }
     nextQuestion()
 })
+
+
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
@@ -65,8 +69,15 @@ function selectedAnswer(a) {
     const selectedButton = a.target
     const correct = selectedButton.dataset.correct
 
+    if (correct) {
+        this.classList.add('correct')
+    } else {
+        this.classList.add('wrong')
+    }
+
     Array.from(choiceButtons.children).forEach(button => {
-        answerStatus(button, button.dataset.correct)
+        button.disabled = true
+
     })
 
     //show popup with correct answer and close it with a click
@@ -75,8 +86,9 @@ function selectedAnswer(a) {
         questionPopupElement.addEventListener('click', closeDiv)
     }
     //show nextbutton if the answer is correct
-    if (correct) {
+    else {
         nextButton.classList.remove('hide')
+
     }
     // if (shuffleQuestions.length > currentQuestion +1) {
     // nextButton.classList.remove('hide')
@@ -84,15 +96,6 @@ function selectedAnswer(a) {
     //function to open score-popup with resetand hide game div. 
     //}
 }
-
-function answerStatus(element, correct) {
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
-    }
-}
-
 
 // Question Bank
 const questionBank = [{
@@ -127,8 +130,10 @@ const questionBank = [{
                 correct: false
             }
         ],
-        correctText: 'teste teste teste test teste',
+        correctText: 'teste teste teste test teste'
+    },
 
+    {
         question: 'Where can I find Spire?',
         answers: [{
                 text: 'Lisbon',
