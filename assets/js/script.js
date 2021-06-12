@@ -47,7 +47,7 @@ function showQuestion(pQuestion) {
     questionPopupElement.innerText = pQuestion.correctText
     var img = new Image()
     img.src = 'assets/images/teste.jpg'
-    document.getElementById('question-img').appendChild(img)
+    questionImageElement.appendChild(img)
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button')
         answerButton.innerText = answer.text
@@ -67,6 +67,7 @@ function resetQuestion() {
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild)
     }
+  
 }
 
 function selectedAnswer(a) {
