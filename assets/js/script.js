@@ -31,15 +31,27 @@ function startQuiz() {
 
 // initialize page for new question.
 function nextQuestion() {
-    resetQuestion()
-    showQuestion(shuffleQuestions[currentQuestion])
+    if (shuffleQuestions.length > currentQuestion + 1) {
+        resetQuestion()
+        showQuestion(shuffleQuestions[currentQuestion])
+    } else {
+        const scoreButton = document.getElementById('score-button')
+        scoreButton.classList.remove('hide')
+        nextButton.classList.add('hide')
+    }
 }
+
+
 
 //Close incorrect answer div onClick
 function closeDiv() {
     questionPopupElement.classList.add('hide')
-    nextButton.classList.remove('hide')
 
+    if (shuffleQuestions.length < currentQuestion + 1) {
+        nextButton.classList.remove('hide')        
+    } else{
+    scoreButton.classList.remove('hide')
+    }
 }
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
@@ -65,8 +77,8 @@ function resetQuestion() {
     nextButton.classList.add('hide')
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild)
-
     }
+
 
 }
 
@@ -89,17 +101,13 @@ function selectedAnswer(a) {
     if (!correct) {
         questionPopupElement.classList.remove('hide')
         questionPopupElement.addEventListener('click', closeDiv)
-    }
+            }
     //show nextbutton if the answer is correct
     else {
         nextButton.classList.remove('hide')
+        
 
     }
-    // if (shuffleQuestions.length > currentQuestion +1) {
-    // nextButton.classList.remove('hide')
-    //} else {
-    //function to open score-popup with resetand hide game div. 
-    //}
 }
 
 // Question Bank
