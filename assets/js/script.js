@@ -6,14 +6,16 @@ const nextButton = document.getElementById('next-button');
 const scoreButton = document.getElementById('score-button');
 const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
-const scorePopupElement = document.getElementById('popup-incorrect');
-const questionImageElement = document.getElementById('question-img');
+//const scorePopupElement = document.getElementById('popup-incorrect');
+//const questionImageElement = document.getElementById('question-img');
+let currentQuestion;
+let shuffleQuestions;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
-    currentQuestion++
+    currentQuestion++;
     nextQuestion();
-})
+});
 
 
 // When executed hide Start Button, shows Question container and Shuffle questions. 
@@ -22,7 +24,7 @@ function startQuiz() {
     startButton.classList.add('hide');
     startQuestion.classList.add('hide');
     questionContainer.classList.remove('hide');
-    shuffleQuestions = questionBank.sort(() => Math.random() - .5);
+    shuffleQuestions = questionBank.sort(() => Math.random() - 0.5);
     currentQuestion = 0;
     nextQuestion();
 }
@@ -67,7 +69,7 @@ function showQuestion(pQuestion) {
             answerButton.dataset.correct = answer.correct;
         }
         answerButton.addEventListener('click', selectedAnswer);
-    })
+    });
 }
 
 // Add hide on next button and clean buttons from previous question
@@ -93,7 +95,7 @@ function selectedAnswer(a) {
     Array.from(choiceButtons.children).forEach(button => {
         button.disabled = true;
 
-    })
+    });
 
     //show popup with correct answer and close it with a click
     if (!correct) {
@@ -168,4 +170,4 @@ const questionBank = [{
         correctText: 'teste teste teste test teste',
         image: 'assets/images/teste.jpg'
     }
-]
+];
