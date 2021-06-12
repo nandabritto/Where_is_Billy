@@ -45,9 +45,8 @@ function closeDiv() {
 function showQuestion(pQuestion) {
     questionElement.innerText = pQuestion.question
     questionPopupElement.innerText = pQuestion.correctText
-    var img = new Image()
-    img.src = 'assets/images/teste.jpg'
-    questionImageElement.appendChild(img)
+    const questionImage = document.getElementById("question-image")
+    questionImage.src = pQuestion.image
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button')
         answerButton.innerText = answer.text
@@ -66,8 +65,9 @@ function resetQuestion() {
     nextButton.classList.add('hide')
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild)
+
     }
-  
+
 }
 
 function selectedAnswer(a) {
@@ -114,7 +114,8 @@ const questionBank = [{
                 correct: false
             }
         ],
-        correctText: 'teste teste teste test teste'
+        correctText: 'teste teste teste test teste',
+        image: 'assets/images/sp.jpg'
     },
     {
         question: 'Where can I find Torre de Belem?',
@@ -135,7 +136,8 @@ const questionBank = [{
                 correct: false
             }
         ],
-        correctText: 'teste teste teste test teste'
+        correctText: 'teste teste teste test teste',
+        image: 'assets/images/teste.jpg'
     },
 
     {
@@ -157,6 +159,7 @@ const questionBank = [{
                 correct: true
             }
         ],
-        correctText: 'teste teste teste test teste'
+        correctText: 'teste teste teste test teste',
+        image: 'assets/images/teste.jpg'
     }
 ]

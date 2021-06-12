@@ -33,7 +33,7 @@ p {
     margin: 0 auto;
 }
 
-.header-img  {
+.header-img {
     height: 20vh;
     padding: 10%;
 }
@@ -87,7 +87,8 @@ p {
     display: none;
 }
 
-#question, #question-img {
+#question,
+#question-img-container {
     font-size: 2em;
     text-align: center;
     margin: 2%;
