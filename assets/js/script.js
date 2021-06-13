@@ -6,10 +6,13 @@ const nextButton = document.getElementById('next-button');
 const scoreButton = document.getElementById('score-button');
 const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
-//const scorePopupElement = document.getElementById('popup-incorrect');
-//const questionImageElement = document.getElementById('question-img');
+const score = document.getElementById('score');
+
+
 let currentQuestion;
 let shuffleQuestions;
+
+let scorePoints = 0;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
@@ -40,6 +43,7 @@ function nextQuestion() {
         scoreButton.classList.remove('hide');
         nextButton.classList.add('hide');
     }
+
 }
 
 
@@ -88,6 +92,8 @@ function selectedAnswer(a) {
 
     if (correct) {
         this.classList.add('correct');
+        scorePoints++;
+        score.innerText = scorePoints;
     } else {
         this.classList.add('wrong');
     }
