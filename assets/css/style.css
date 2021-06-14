@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
     --genoa: #29726C;
@@ -12,6 +13,16 @@
 * {
     box-sizing: border-box;
     font: 'Cabin', sans-serif;
+}
+
+section {
+    background-image: url('/assets/images/stamps-visa-background.jpg');
+    background-size: contain;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    min-height: 500px;
 }
 
 h1 {
@@ -41,15 +52,23 @@ p {
 /* quiz container*/
 
 #start-container,
-#quiz-container {
-    width: 60vw;
-    max-width: 700px;
-    display:flex;
-    margin: 2% auto;
+#quiz-container,
+#score {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    margin: 5% auto;
     justify-content: center;
     align-items: center;
-    background-color: var(--opal);
+    background-color: rgba(162, 190, 187, 0.9);
     border-radius: 25px;
+}
+
+#score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+
 }
 
 #start-button,
@@ -62,15 +81,13 @@ p {
 
 .button {
     font-size: 1.3em;
-    padding: 20px;
+    padding: 15px;
     width: 400px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--black);
     background-color: var(--java);
     border-radius: 25px;
     display: block;
     margin: 2% auto;
+    color: black;
 }
 
 .choice-container {
@@ -84,7 +101,7 @@ p {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 #question,
@@ -92,26 +109,37 @@ p {
     font-size: 2em;
     text-align: center;
     margin: 2%;
+    font-weight: bold;
+    position: sticky;
+}
+
+#question-image {
+    width: 90%;
+    border-radius: 10px;
 }
 
 .correct {
-    background-color: green;
+    background-color: rgb(59, 115, 18);
+    color: white;
 }
 
 .wrong {
-    background-color: #CD000B;
+    background-color: rgb(217, 4, 22);
+    color: white;
 }
 
-#popup {
-    z-index: 0;
-    position: sticky;
+#popup-incorrect {
+    z-index: 9;
+    position: fixed;
     width: 50vw;
     max-width: 500px;
-    margin: 0 auto;
-    background-color: red;
-    opacity: 60%;
+    margin: 3% 12%;
+    background-color: whitesmoke;
+    opacity: 90%;
     top: 30%;
+    min-height: 300px;
 }
+
 
 @media screen and (max-width: 1024px) {
 
@@ -119,12 +147,11 @@ p {
 
     #start-container,
     #quiz-container {
-        width: 80vw;
+        width: 80%;
     }
 
-    .button {
-        font-size: 1em;
-
+    section {
+        width: 70%;
     }
 
     .choice-container {
@@ -140,7 +167,7 @@ p {
         }
 
         h2 {
-            font-size: 1rem;
+            font-size: 1.2em;
         }
 
         img {
@@ -149,15 +176,29 @@ p {
 
         /*quiz container */
 
-        .button,
+        #start-container,
+        #quiz-container {
+            width: 85%;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        #question {
+            font-size: 1.5em;
+        }
+
+        .button {
+            width: 230px;
+            padding: 10px;
+        }
+
         #start-button {
             width: 65vw;
             margin: 3% auto;
         }
 
-        #question {
-            font-size: 1em;
 
-        }
     }
 }
