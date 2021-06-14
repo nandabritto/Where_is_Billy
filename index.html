@@ -25,45 +25,47 @@
 
 
     <!-- game container-->
-<section>
-   
-    <div id="start-container">
-        <h2 id="start-question">I'm lost! Can you help me?</h2>
-    </div>
+    <section>
 
-    <div id="popup-incorrect" class="hide">
-        <h1>Incorrect</h1>
-    </div>
+        <div id="start-container">
+            <h2 id="start-question">I'm lost! Can you help me?</h2>
+        </div>
 
-    <div id="popup-score" class="hide">
-        <h1>Score</h1>
-    </div>
+        <div id="myModal" class="modal">
+            <div id="popup-incorrect" class="modal-content"></div>
+            <span class="close">&times;</span>
+    
+        </div>
 
-    <div id="quiz-container">
-        <div id="quiz" class="hide">
-            <div id="question">
-                <h2>Question</h2>
-            </div>
-            <div id="question-img-container"><img id="question-image" src=""></div>
-            <div id="choice-container">
-                <button class="button">Answer 1</button>
-                <button class="button">Answer 2</button>
-                <button class="button">Answer 3</button>
-                <button class="button">Answer 4</button>
+        <div id="popup-score" class="hide">
+            <h1>Score</h1>
+        </div>
+
+        <div id="quiz-container">
+            <div id="quiz" class="hide">
+                <div id="question">
+                    <h2>Question</h2>
+                </div>
+                <div id="question-img-container"><img id="question-image" src=""></div>
+                <div id="choice-container">
+                    <button class="button">Answer 1</button>
+                    <button class="button">Answer 2</button>
+                    <button class="button">Answer 3</button>
+                    <button class="button">Answer 4</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="controls aligned">
-        <button id="start-button" class="button">Play</a>
-        </button>
-        <button id="next-button" class="button hide">Next</a>
-        </button>
-        <button id="score-button" class="button hide">Score</a>
-        </button>
-        
-    </div>
-    <div id="score" class="hide">0</div>
-</section>
+        <div class="controls aligned">
+            <button id="start-button" class="button">Play</a>
+            </button>
+            <button id="next-button" class="button hide">Next</a>
+            </button>
+            <button id="score-button" class="button hide">Score</a>
+            </button>
+
+        </div>
+        <div id="score" class="hide">0</div>
+    </section>
 
     <!-- My JavaScript file-->
     <script src="assets/js/script.js"></script>

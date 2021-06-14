@@ -48,8 +48,9 @@ function nextQuestion() {
 
 
 //Close incorrect answer div onClick
-function closeDiv() {
+function showNextButton() {
     questionPopupElement.classList.add('hide');
+    
 
     if (shuffleQuestions.length >= currentQuestion + 1) {
         nextButton.classList.remove('hide');
@@ -105,14 +106,26 @@ function selectedAnswer(a) {
 
     //show popup with correct answer and close it with a click
     if (!correct) {
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName('close')[0];
+        modal.style.display = "block";
         questionPopupElement.classList.remove('hide');
-        questionPopupElement.addEventListener('click', closeDiv);
+        span.onclick = function () {
+            modal.style.display = "none"
+            showNextButton();
+
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none"
+                showNextButton();
+            }
+        }
+
     }
     //show nextbutton if the answer is correct
     else {
         nextButton.classList.remove('hide');
-
-
     }
 }
 
