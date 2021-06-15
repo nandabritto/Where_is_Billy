@@ -22,13 +22,15 @@ section {
     max-width: 800px;
     margin: auto;
     border-radius: 20px;
-    min-height: 500px;
+    height: 850px;
 }
 
-h1 {
-    font-size: 3rem;
+h1,
+#question {
+    font-size: 2em;
     color: var(--black);
     text-align: center;
+    padding: 4% 0;
 }
 
 p {
@@ -51,29 +53,7 @@ p {
 
 /* quiz container*/
 
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    margin: 2em 0 0 0;
-    width: 14em;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: 1px var(--black) solid;
-    box-shadow: var(--genoa);
-}
-
-input::placeholder {
-    color: var(--java);
-}
-
-#start-container,
-#quiz-container,
-#score {
+.container {
     width: 80%;
     max-width: 600px;
     display: flex;
@@ -112,19 +92,30 @@ input::placeholder {
     text-align: center;
 }
 
-.choice-container {
-    display: flex;
-    width: 80%;
-    border-radius: 10px;
-    background-color: var(--genoa);
-    color: var(--opal);
-    font-size: 2rem;
-    margin: 2% auto;
-}
-
 .hide {
     display: none !important;
 }
+
+
+#question-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* correct and wrong answers*/
+
+.correct {
+    background-color: rgb(59, 115, 18);
+    color: white;
+}
+
+.wrong {
+    background-color: rgb(217, 4, 22);
+    color: white;
+}
+
+/* Error pop up */
+
 
 .modal {
     display: none;
@@ -138,30 +129,6 @@ input::placeholder {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-#question,
-#question-img-container {
-    font-size: 2em;
-    text-align: center;
-    margin: 2%;
-    font-weight: bold;
-    position: sticky;
-}
-
-#question-image {
-    width: 90%;
-    border-radius: 10px;
-}
-
-.correct {
-    background-color: rgb(59, 115, 18);
-    color: white;
-}
-
-.wrong {
-    background-color: rgb(217, 4, 22);
-    color: white;
 }
 
 .modal-content {
@@ -186,22 +153,44 @@ input::placeholder {
     cursor: pointer;
 }
 
+/* End page */
+
+.box {
+    display: block;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 2em 0 0 0;
+    width: 14em;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: 1px var(--black) solid;
+    box-shadow: var(--genoa);
+}
+
+input::placeholder {
+    color: var(--java);
+}
+
 
 @media screen and (max-width: 1024px) {
 
     /*quiz container */
 
-    #start-container,
-    #quiz-container {
-        width: 80%;
+    #question-image {
+        width: 90%;
+        margin: 0 5%;
     }
 
     section {
         width: 70%;
-    }
-
-    .choice-container {
-        width: 100%;
     }
 
     @media screen and (max-width: 700px) {
@@ -214,10 +203,6 @@ input::placeholder {
 
         h2 {
             font-size: 1.2em;
-        }
-
-        img {
-            height: 15vh;
         }
 
         /*quiz container */

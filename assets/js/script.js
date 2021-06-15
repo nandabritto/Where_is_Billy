@@ -3,7 +3,7 @@ const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button');
-const scoreButton = document.getElementById('score-button');
+//const scoreButton = document.getElementById('score-button');
 const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
 const score = document.getElementById('score');
@@ -39,13 +39,13 @@ function nextQuestion() {
         showQuestion(shuffleQuestions[currentQuestion]);
     }
     if ((shuffleQuestions.length == currentQuestion)) {
-        const scoreButton = document.getElementById('score-button');
-        scoreButton.classList.remove('hide');
-        nextButton.classList.add('hide');
+      //  const scoreButton = document.getElementById('score-button');
+        //scoreButton.classList.remove('hide');
+        window.location.assign('/end.html');
+       // nextButton.classList.add('hide');
     }
 
 }
-
 
 //Close incorrect answer div onClick
 function showNextButton() {
@@ -55,8 +55,9 @@ function showNextButton() {
     if (shuffleQuestions.length >= currentQuestion + 1) {
         nextButton.classList.remove('hide');
     } else {
-        scoreButton.classList.remove('hide');
-    }
+        window.location.assign('/end.html')}
+       // scoreButton.classList.remove('hide');
+    
 }
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
