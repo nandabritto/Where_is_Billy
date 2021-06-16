@@ -41,6 +41,7 @@ function nextQuestion() {
     if ((shuffleQuestions.length == currentQuestion)) {
       //  const scoreButton = document.getElementById('score-button');
         //scoreButton.classList.remove('hide');
+        localStorage.setItem("mostRecentScore", scorePoints);
         window.location.assign('/end.html');
        // nextButton.classList.add('hide');
     }
