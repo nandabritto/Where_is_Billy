@@ -13,7 +13,7 @@
 <body>
 
     <script>
-        
+
     </script>
     <!-- header container-->
 
@@ -30,17 +30,8 @@
 
     <!-- game container-->
     <section>
-        <div id="myModal" class="modal">
-            <div id="popup-incorrect" class="modal-content"></div>
-            <span class="close">&times;</span>
-        </div>
-
         <div class="container">
-            <h1 id="start-question">I'm lost! Can you help me?</h1>
-        </div>
-
-        <div class="container">
-            <div id="quiz" class="hide">
+            <div id="quiz">
                 <div id="question">
                     Question
                 </div>
@@ -54,15 +45,18 @@
                     <button class="button">Answer 4</button>
                 </div>
             </div>
+
+            <div id="myModal" class="modal">
+                <div id="popup-incorrect" class="modal-content"></div>
+                <span class="close">&times;</span>
+            </div>
         </div>
         <div class="controls aligned">
-            <button id="start-button" class="button"><i class="fas fa-play"></i>&nbspPlay</a>
-            </button>
-            <button id="next-button" class="button hide"> <i class="fas fa-arrow-alt-right"></i>&nbspNext</a>
+            <button id="next-button" class="button"> <i class="fas fa-arrow-alt-right"></i>&nbspNext</a>
             </button>
 
         </div>
-        <div id="score" class="hide">0</div>
+
     </section>
 
     <!-- My JavaScript file-->

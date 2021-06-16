@@ -1,4 +1,4 @@
-const startButton = document.getElementById('start-button');
+//const startButton = document.getElementById('start-button');
 const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
@@ -13,8 +13,11 @@ let currentQuestion;
 let shuffleQuestions;
 
 let scorePoints = 0;
+window.onload = function beginGame() {
 
-startButton.addEventListener('click', startQuiz);
+    startQuiz()
+}
+//startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentQuestion++;
     nextQuestion();
@@ -22,16 +25,13 @@ nextButton.addEventListener('click', () => {
 
 //start quiz when window loaded
 
-window.onload = function beginGame() {
 
-    startQuiz()
-}
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
-    startButton.classList.add('hide');
-    startQuestion.classList.add('hide');
-    questionContainer.classList.remove('hide');
+   // startButton.classList.add('hide');
+   // startQuestion.classList.add('hide');
+   // questionContainer.classList.remove('hide');
     shuffleQuestions = questionBank.sort(() => Math.random() - 0.5);
     currentQuestion = 0;
     nextQuestion();
@@ -86,7 +86,7 @@ function showQuestion(pQuestion) {
 
 // Add hide on next button and clean buttons from previous question
 function resetQuestion() {
-    nextButton.classList.add('hide');
+   // nextButton.classList.add('hide');
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild);
     }
@@ -101,7 +101,7 @@ function selectedAnswer(a) {
     if (correct) {
         this.classList.add('correct');
         scorePoints++;
-        score.innerText = scorePoints;
+        //score.innerText = scorePoints;
     } else {
         this.classList.add('wrong');
     }
@@ -116,7 +116,7 @@ function selectedAnswer(a) {
         var modal = document.getElementById('myModal');
         var span = document.getElementsByClassName('close')[0];
         modal.style.display = "block";
-        questionPopupElement.classList.remove('hide');
+       // questionPopupElement.classList.remove('hide');
         span.onclick = function () {
             modal.style.display = "none"
             showNextButton();
@@ -132,7 +132,7 @@ function selectedAnswer(a) {
     }
     //show nextbutton if the answer is correct
     else {
-        nextButton.classList.remove('hide');
+       // nextButton.classList.remove('hide');
     }
 }
 

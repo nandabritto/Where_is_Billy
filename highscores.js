@@ -8,12 +8,13 @@ highScoresList.innerHTML = highScores2
     .join("");
 
 
-const clearScore = document.getElementById('clear-score');
-clearScore.addEventListener('click', clearOldScores());
+//const clearScore = document.getElementById('clear-score');
 
-function clearOldScores (){
-    localStorage.clear();
-}
+//clearScore.addEventListener('click', clearScore());
+
+//function clearOldScores (){
+    //localStorage.clear();
+//}
 
 
 
