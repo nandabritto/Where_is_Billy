@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div id="highScores" class="flex-center flex-column">
-          <h1 id="finalScore">High Scores</h1>
+        <div id="highScores">
+          <h1 id="finalScore"><i class="fas fa-medal"></i>
+            High Scores</i>
+        </h1>
           <ul id="highScoresList"></ul>
-          <a class="btn" href="/">Go Home</a>
+          <a class="button" id="clear-score" href="/highscores.html"><i class="fas fa-trash"></i>&nbsp Clear Score</a>
+          <a class="button" href="/"> <i class="fas fa-home"></i> &nbsp Go Home</a>
         </div>
       </div>
+
+
       <script src="highscores.js"></script>
 
 </body>

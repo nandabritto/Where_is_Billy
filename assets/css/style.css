@@ -15,6 +15,10 @@
     font: 'Cabin', sans-serif;
 }
 
+.centered {
+    text-align: center;
+}
+
 section {
     background-image: url('/assets/images/stamps-visa-background.jpg');
     background-size: contain;
@@ -27,14 +31,25 @@ section {
 
 h1,
 #question {
-    font-size: 2em;
+    font-size: 3em;
     color: var(--black);
     text-align: center;
-    padding: 4% 0;
 }
 
-p {
-    font-size: 1.5rem
+p
+ {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style-type:none;
+    font-size: 2em;
+}
+
+#highScoresList {
+    margin: 0 auto;
+    width: 70%;
+    line-height: 3em;
 }
 
 /*header*/
@@ -157,6 +172,7 @@ p {
 
 .box {
     display: block;
+    padding:2%;
 }
 
 form {
@@ -167,7 +183,6 @@ form {
 }
 
 input {
-    margin: 2em 0 0 0;
     width: 14em;
     padding: 1.5rem;
     font-size: 1.8rem;
