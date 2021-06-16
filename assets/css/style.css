@@ -10,16 +10,22 @@
 
 }
 
+
+
+
 * {
     box-sizing: border-box;
     font: 'Cabin', sans-serif;
 }
 
+
+/*header*/
+
 .centered {
     text-align: center;
 }
 
-section {
+#background-container {
     background-image: url('/assets/images/stamps-visa-background.jpg');
     background-size: contain;
     width: 70%;
@@ -48,7 +54,7 @@ li {
 
 #highScoresList {
     margin: 0 auto;
-    width: 70%;
+    width: max-content;
     line-height: 3em;
 }
 

@@ -20,7 +20,12 @@ nextButton.addEventListener('click', () => {
     nextQuestion();
 });
 
+//start quiz when window loaded
 
+window.onload = function beginGame() {
+
+    startQuiz()
+}
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
