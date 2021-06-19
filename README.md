@@ -70,7 +70,7 @@ The Images and text colour had contrasted the theme of the logo and website well
 
 * Font Selection
  
-Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website. The chosen fonts were FontName.
+Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website. The chosen fonts were Montserrat, sans-serif;
 
 <img src="">
 

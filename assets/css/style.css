@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap');
 
 :root {
     --genoa: #29726C;
@@ -10,14 +13,76 @@
 
 }
 
-
-
-
 * {
     box-sizing: border-box;
-    font: 'Cabin', sans-serif;
+    
 }
 
+
+/*navbar */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 7px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    padding: 7px;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: var(--genoa) !important;
+    padding-top: 5%;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: white !important;
+    background-color: var(--java) !important;
+    border-radius: 25px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: var(--genoa);
+}
+
+#hamburger .icon-bar {
+    background: var(--genoa);
+}
+
+#hamburger:hover,
+#hamburger.is-active {
+    background: var(--java) !important;
+}
+
+#hamburger:hover .icon-bar,
+#hamburger.is-active .icon-bar {
+    background: white !important;
+
+}
+
+#hamburger:focus {
+    background: var(--java);
+}
+
+#hamburger:focus .icon-bar {
+    background: #FFF;
+}
+
+.navbar-nav>li>a {
+    padding: 27px 10px;
+    margin: auto 15px auto 5px;
+}
+
+.navbar-header {
+    width: 50%;
+
+}
 
 /*header*/
 
@@ -42,13 +107,12 @@ h1,
     text-align: center;
 }
 
-p
- {
+p {
     font-size: 1.5rem;
 }
 
 li {
-    list-style-type:none;
+    list-style-type: none;
     font-size: 2em;
 }
 
@@ -64,12 +128,13 @@ li {
     display: flex;
     align-items: center;
     width: max-content;
-    margin: 0 auto;
+    margin: 25% auto;
 }
 
 .header-img {
-    height: 20vh;
-    padding: 10%;
+    height: 9vh;
+    margin-left: 10px;
+    float: left;
 }
 
 /* quiz container*/
@@ -178,7 +243,7 @@ li {
 
 .box {
     display: block;
-    padding:2%;
+    padding: 2%;
 }
 
 form {
@@ -203,6 +268,14 @@ input::placeholder {
 
 @media screen and (max-width: 1024px) {
 
+    .navbar .navbar-brand {
+        padding-top: 7%;
+    }
+
+    .header-img {
+        height: 7vh;
+    }
+
     /*quiz container */
 
     #question-image {
@@ -215,9 +288,22 @@ input::placeholder {
     }
 
     @media screen and (max-width: 700px) {
+        .navbar-header {
+            width: 100%;
+        }
+
+        .navbar .navbar-brand {
+            padding-top: 4%;
+            font-size: 1.8em;
+        }
+
+        .navbar li a {
+            font-size: smaller;
+            padding: 10px 0px 0px 20px;
+        }
 
         /*header*/
-
+        /*
         h1 {
             font-size: 1.3em;
         }
@@ -225,7 +311,7 @@ input::placeholder {
         h2 {
             font-size: 1.2em;
         }
-
+*/
         /*quiz container */
 
         #start-container,
