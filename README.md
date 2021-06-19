@@ -70,7 +70,7 @@ The Images and text colour had contrasted the theme of the logo and website well
 
 * Font Selection
  
-Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website. The chosen fonts were Montserrat, sans-serif;
+Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website. The chosen fonts were Montserrat for headings and Lato for lists and paragraphs.
 
 <img src="">
 
@@ -189,17 +189,16 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
-
 ### Media
 
-- All pictures and images used in this project are from []() and [freepik](https://www.freepik.com/home).
+- All pictures and images used in this project are from [Depositphotos](https://depositphotos.com) and [freepik](https://www.freepik.com/home).
 
 ### Worked based in other code
 
 + [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on website.
-+ [Free Logo Design](https://www.freelogodesign.org/manager/showcase/2371553ca37c44b2880ac8e41935844d) – Used to develop logo used on favicon.
 + [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
-+ [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp) .
++ [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
++ [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/) - Used to help building collapsed navbar.
 
 
 ### Acknowledgements

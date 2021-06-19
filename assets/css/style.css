@@ -3,6 +3,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,300;1,500&display=swap');
 
 :root {
     --genoa: #29726C;
@@ -10,12 +11,10 @@
     --java: #2F918B;
     --opal: #A2BEBB;
     --black: #000000;
-
 }
 
 * {
     box-sizing: border-box;
-    
 }
 
 
@@ -26,7 +25,6 @@
     background-color: white;
     z-index: 9999;
     border: 0;
-    font-family: Montserrat, sans-serif;
     font-size: 7px !important;
     letter-spacing: 4px;
     border-radius: 0;
@@ -86,6 +84,23 @@
 
 /*header*/
 
+.left-about {
+    padding-top: 400px;
+    width: 40%;
+    float: left;
+}
+
+.right-about {
+    padding-top: 200px;
+    width: 60%;
+    float: right;
+}
+
+.right-about>img {
+    width: 100%;
+    padding-right: 5%;
+}
+
 .centered {
     text-align: center;
 }
@@ -102,18 +117,17 @@
 
 h1,
 #question {
+    font-family: 'Lato', sans serif;
     font-size: 3em;
     color: var(--black);
     text-align: center;
 }
 
-p {
-    font-size: 1.5rem;
-}
-
+p,
 li {
-    list-style-type: none;
-    font-size: 2em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 #highScoresList {
@@ -272,6 +286,7 @@ input::placeholder {
         padding-top: 7%;
     }
 
+
     .header-img {
         height: 7vh;
     }
@@ -283,10 +298,6 @@ input::placeholder {
         margin: 0 5%;
     }
 
-    section {
-        width: 70%;
-    }
-
     @media screen and (max-width: 700px) {
         .navbar-header {
             width: 100%;
@@ -294,7 +305,7 @@ input::placeholder {
 
         .navbar .navbar-brand {
             padding-top: 4%;
-            font-size: 1.8em;
+            font-size: 1.7em;
         }
 
         .navbar li a {
@@ -302,16 +313,21 @@ input::placeholder {
             padding: 10px 0px 0px 20px;
         }
 
-        /*header*/
-        /*
-        h1 {
-            font-size: 1.3em;
+        .left-about,
+        .right-about {
+            width: 100%;
+            float: left;
         }
 
-        h2 {
-            font-size: 1.2em;
+        .right-about {
+            padding-top: 60px;
         }
-*/
+
+        .left-about {
+            padding-top: 0;
+        }
+
+
         /*quiz container */
 
         #start-container,
