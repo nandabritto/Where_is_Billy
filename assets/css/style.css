@@ -85,13 +85,12 @@
 /*header*/
 
 .left-about {
-    padding-top: 400px;
     width: 40%;
     float: left;
+    padding: 15% 5%;
 }
 
 .right-about {
-    padding-top: 200px;
     width: 60%;
     float: right;
 }
@@ -115,12 +114,19 @@
     height: 850px;
 }
 
+section{
+    margin-top:100px;
+}
 h1,
 #question {
     font-family: 'Lato', sans serif;
     font-size: 3em;
     color: var(--black);
     text-align: center;
+}
+
+h2 {
+    font-size: 2.3em;
 }
 
 p,
@@ -176,9 +182,17 @@ li {
     width: 200px;
     font-weight: 400;
     background-color: #CD000B;
+    color: white !important;
+}
+
+a {
     color: white;
 }
 
+a:hover {
+    color:white!important;
+    text-decoration:solid;
+}
 .button {
     font-size: 1.3em;
     padding: 15px;
@@ -281,11 +295,13 @@ input::placeholder {
 
 
 @media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.3em;
+    }
 
     .navbar .navbar-brand {
         padding-top: 7%;
     }
-
 
     .header-img {
         height: 7vh;
@@ -299,6 +315,7 @@ input::placeholder {
     }
 
     @media screen and (max-width: 700px) {
+
         .navbar-header {
             width: 100%;
         }
@@ -309,24 +326,18 @@ input::placeholder {
         }
 
         .navbar li a {
-            font-size: smaller;
+            font-size: xx-small;
             padding: 10px 0px 0px 20px;
+            font-weight: 600;
         }
 
         .left-about,
         .right-about {
             width: 100%;
             float: left;
-        }
-
-        .right-about {
-            padding-top: 60px;
-        }
-
-        .left-about {
             padding-top: 0;
         }
-
+ 
 
         /*quiz container */
 
@@ -349,7 +360,7 @@ input::placeholder {
         }
 
         #start-button {
-            width: 65vw;
+            
             margin: 3% auto;
         }
 
