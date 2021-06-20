@@ -23,9 +23,6 @@ nextButton.addEventListener('click', () => {
     nextQuestion();
 });
 
-//start quiz when window loaded
-
-
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
@@ -43,6 +40,7 @@ function nextQuestion() {
     if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
+        myTimer()
     }
     if ((shuffleQuestions.length == currentQuestion)) {
       //  const scoreButton = document.getElementById('score-button');
@@ -64,7 +62,6 @@ function showNextButton() {
     } else {
         window.location.assign('/end.html')}
        // scoreButton.classList.remove('hide');
-    
 }
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
@@ -91,9 +88,8 @@ function resetQuestion() {
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild);
     }
-
-
 }
+
 // target on selected asnwer and style it correct or wrong 
 function selectedAnswer(a) {
     const selectedButton = a.target;
@@ -109,7 +105,6 @@ function selectedAnswer(a) {
 
     Array.from(choiceButtons.children).forEach(button => {
         button.disabled = true;
-
     });
 
     //show popup with correct answer and close it with a click
@@ -121,7 +116,6 @@ function selectedAnswer(a) {
         span.onclick = function () {
             modal.style.display = "none"
             showNextButton();
-
         }
         window.onclick = function (event) {
             if (event.target == modal) {
@@ -129,11 +123,22 @@ function selectedAnswer(a) {
                 showNextButton();
             }
         }
-
     }
     //show nextbutton if the answer is correct
     else {
        // nextButton.classList.remove('hide');
+    }
+}
+
+var sec = 30;
+var time = setInterval(myTimer, 1000);
+
+function myTimer() {
+    document.getElementById('timer').innerHTML = '<i class="far fa-clock"></i>'+' ' + sec + ' ' + "sec left";
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+        alert("Time out!! :(");
     }
 }
 

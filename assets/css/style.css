@@ -79,9 +79,14 @@
 
 .navbar-header {
     width: 50%;
-
 }
 
+#timer{
+    font-size: x-large;
+    color:var(--denim);
+    width:max-content;
+    margin: 0 auto;
+}
 /*header*/
 
 .left-about {
@@ -164,7 +169,7 @@ li {
     width: 80%;
     max-width: 600px;
     display: flex;
-    margin: 5% auto;
+    margin: 1% auto;
     justify-content: center;
     align-items: center;
     background-color: rgba(162, 190, 187, 0.9);
@@ -184,10 +189,6 @@ li {
     font-weight: 400;
     background-color: #CD000B;
     color: white !important;
-}
-
-#next-button{
-    margin-top: -50px;
 }
 
 a {
