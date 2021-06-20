@@ -176,17 +176,20 @@ li {
     border-radius: 25px;
 }
 
+#hint-image{
+    width: 60%;
+    margin:0 auto
+}
 #quiz{
     height:650px;
 }
-
+/*
 #score {
     font-family: 'Press Start 2P', cursive;
     font-size: xx-large;
     font-weight: bolder;
-
 }
-
+*/
 #start-button,
 #next-button {
     width: 200px;
@@ -269,6 +272,7 @@ a:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-size:large;
 }
 
 .close {
