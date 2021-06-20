@@ -176,13 +176,15 @@ li {
     border-radius: 25px;
 }
 
-#hint-image{
+#hint-image {
     width: 60%;
-    margin:0 auto
+    margin: 0 auto
 }
-#quiz{
-    height:650px;
+
+#quiz {
+    height: 650px;
 }
+
 /*
 #score {
     font-family: 'Press Start 2P', cursive;
@@ -268,11 +270,11 @@ a:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
+    margin: 2% auto;
+    padding: 5%;
     border: 1px solid #888;
     width: 80%;
-    font-size:large;
+    font-size: large;
 }
 
 .close {
@@ -289,6 +291,12 @@ a:hover {
     cursor: pointer;
 }
 
+#map {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto !important;
+}
+
 #progress {
     width: 50%;
     margin: 0 auto;
@@ -300,7 +308,7 @@ a:hover {
 }
 
 #progressBar {
-  /*  width: 20rem;
+    /*  width: 20rem;
     height: 4rem;*/
     border: 0.3rem solid var(--java);
     margin-top: 1.5rem;

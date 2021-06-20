@@ -32,7 +32,7 @@ const MAX_QUESTIONS = 10;
 
 // initialize page for new question.
 function nextQuestion() {
-    if (shuffleQuestions.length >= currentQuestion + 1)  {
+    if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
         myTimer();
@@ -55,6 +55,20 @@ function showQuestion(pQuestion) {
     questionPopupElement.innerText = pQuestion.correctText;
     const questionImage = document.getElementById("question-image");
     questionImage.src = pQuestion.image;
+
+  
+let map;
+
+//function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: parseFloat(pQuestion.lat),
+            lng: parseFloat(pQuestion.lng)
+        },
+        zoom: 14
+    });
+//}
+ //   initMapGui(pQuestion.lat,pQuestion.lng);
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button');
         answerButton.innerText = answer.text;
@@ -107,6 +121,24 @@ function wrongAnswer() {
     }
 }
 
+//google maps api
+
+/*
+// guilherme
+let map;
+
+function initMapGui(pLat,pLong) {
+    var userLng = parseFloat($(pLat).val());
+    var userLat = parseFloat($(pLong).val());
+    var mapOptions = {
+            center: { lat: userLat, lng: userLng },
+            zoom: 8
+        };
+map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
+*/
+//
+
 // Add contdown function 
 let timer;
 
@@ -130,26 +162,26 @@ function myTimer() {
 
 // Question Bank
 const questionBank = [{
-    question: "I'm going to the country that has the longest coastline in the world",
-    answers: [{
-            text: 'Canada',
-            correct: true
-        },
-        {
-            text: 'Brazil',
-            correct: false
-        },
-        {
-            text: 'USA',
-            correct: false
-        },{
-            text: 'Australia',
-            correct: false
-        }
-    ],
-    correctText: "Canada's coastline is the world's longest, measuring 243,042 km (includes the mainland coast and the coasts of offshore islands).",
-    image: ''
-},
+        question: "I'm going to the country that has the longest coastline in the world",
+        answers: [{
+                text: 'Canada',
+                correct: true
+            },
+            {
+                text: 'Brazil',
+                correct: false
+            },
+            {
+                text: 'USA',
+                correct: false
+            }, {
+                text: 'Australia',
+                correct: false
+            }
+        ],
+        correctText: "Canada's coastline is the world's longest, measuring 243,042 km (includes the mainland coast and the coasts of offshore islands).",
+        image: ''
+    },
     {
         question: "I'll visit a famous volcano that detroyed 5 cities in AD 79 and until nowadays is one of the most dangerous volcanos in the world",
         answers: [{
@@ -160,16 +192,18 @@ const questionBank = [{
                 text: 'Mount Vesuvius - Italy',
                 correct: true
             },
-			{
+            {
                 text: 'Mount Unzen - Japan',
                 correct: false
-            },{
+            }, {
                 text: 'Santorini - Greece',
                 correct: false
             }
         ],
         correctText: 'The eruption of Mount Vesuvius in AD 79 destroyed the Roman cities of Pompeii, Herculaneum, Oplontis and Stabiae, as well as several other settlements. Today, it is regarded as one of the most dangerous volcanoes in the world because of the population of 3,000,000 people living near enough to be affected by an eruption, with 600,000 in the danger zone, making it the most densely populated volcanic region in the world',
-        image: ''
+        image: '',
+        lat: '40.823876029620465', 
+        lng: '14.430107359016942'
     },
 
     {
@@ -182,10 +216,10 @@ const questionBank = [{
                 text: 'Romania',
                 correct: true
             },
-			{
+            {
                 text: 'Slovakia',
                 correct: false
-            },{
+            }, {
                 text: 'Czech Republic',
                 correct: false
             }
@@ -194,8 +228,8 @@ const questionBank = [{
         image: 'assets/images/bran-castle.jpg'
     },
 
-{
-    question: "I'll finally visit the city where Antonio Gaudi's Holy Family Basilica is located!",
+    {
+        question: "I'll finally visit the city where Antonio Gaudi's Holy Family Basilica is located!",
         answers: [{
                 text: 'Madrid',
                 correct: false
@@ -204,10 +238,10 @@ const questionBank = [{
                 text: 'Sevilha',
                 correct: false
             },
-			{
+            {
                 text: 'Bilbau',
                 correct: false
-            },{
+            }, {
                 text: 'Barcelona',
                 correct: true
             }
@@ -215,28 +249,29 @@ const questionBank = [{
         correctText: "The Basílica de la Sagrada Família ('Basilica of the Holy Family'), also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by the Spanish architect Antoni Gaudí (1852–1926), his work on the building is part of a UNESCO World Heritage Site.",
         image: 'assets/images/holy-family.jpg'
     },
-    {question: "I'm headed to the African country that has the largest population! ",
-    answers: [{
-            text: 'South Africa',
-            correct: false
-        },
-        {
-            text: 'Egypt',
-            correct: false
-        },
-        {
-            text: 'Nigeria',
-            correct: true
-        },{
-            text: 'Angola',
-            correct: false
-        }
-    ],
-    correctText: "As the most populous nation in Africa, Nigeria is home to over 206 million inhabitants. Each year, its population increases by nearly 5.5 million. With 2.64% of the world’s population, Nigeria is the seventh most populous country worldwide.",
-    image: 'assets/images/nigeria.jpg'
-},
-{
-    question: "I'm about to go to Maho Beach, famous for its proximity to the island's international airport. Where am I going to?",
+    {
+        question: "I'm headed to the African country that has the largest population! ",
+        answers: [{
+                text: 'South Africa',
+                correct: false
+            },
+            {
+                text: 'Egypt',
+                correct: false
+            },
+            {
+                text: 'Nigeria',
+                correct: true
+            }, {
+                text: 'Angola',
+                correct: false
+            }
+        ],
+        correctText: "As the most populous nation in Africa, Nigeria is home to over 206 million inhabitants. Each year, its population increases by nearly 5.5 million. With 2.64% of the world’s population, Nigeria is the seventh most populous country worldwide.",
+        image: 'assets/images/nigeria.jpg'
+    },
+    {
+        question: "I'm about to go to Maho Beach, famous for its proximity to the island's international airport. Where am I going to?",
         answers: [{
                 text: 'San Martin',
                 correct: true
@@ -245,15 +280,15 @@ const questionBank = [{
                 text: 'Bahamas',
                 correct: false
             },
-			{
+            {
                 text: 'Aruba',
                 correct: true
-            },{
+            }, {
                 text: 'Dominican Republic',
                 correct: false
             }
         ],
         correctText: "Due to the unique proximity of low-flying airliners arriving and departing from Princess Juliana International Airport, the location is popular with plane spotters. This is one of the few places in the world where aircraft can be viewed in their flight path just outside the end of the runway. Watching airliners pass over the beach is such a popular activity that daily arrivals and departures airline timetables are displayed on a board in most bars and restaurants on the beach.",
         image: 'assets/images/maho-beach.jpg'
-}
+    }
 ];
