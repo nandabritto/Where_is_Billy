@@ -19,7 +19,7 @@
 
   <nav class="navbar navbar-fixed-top">
     <div>
-      <div class="navbar-header"><img class="header-img" src="assets/images/icon.jpg"
+      <div class="navbar-header"><img class="navbar-img" src="assets/images/icon.jpg"
           alt="globe with touristic attractions">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="hamburger">
           <span class="icon-bar"></span>
@@ -37,23 +37,24 @@
       </div>
     </div>
   </nav>
-
-  <div class="container">
+<section>
+    <div class="container">
     <div id="highScores">
       <h1 id="finalScore"><i class="fas fa-medal"></i>
         High Scores</i>
       </h1>
-      <ul id="highScoresList"></ul>
+      <ol id="highScoresList"></ol>
       <a class="button" id="clear-score" href="/highscores.html"><i class="fas fa-trash"></i>&nbsp Clear Score</a>
       <a class="button" href="/"> <i class="fas fa-home"></i> &nbsp Go Home</a>
     </div>
   </div>
+</section>
 
   <!--Bootstrap navbar JS and JQuery-->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script src="navbar.js"></script>
+
   <script src="assets/js/highscores.js"></script>
 
 </body>

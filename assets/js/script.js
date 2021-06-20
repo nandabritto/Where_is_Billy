@@ -39,6 +39,7 @@ function startQuiz() {
 
 // initialize page for new question.
 function nextQuestion() {
+  
     if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
@@ -50,7 +51,7 @@ function nextQuestion() {
         window.location.assign('/end.html');
        // nextButton.classList.add('hide');
     }
-
+    window.scrollTo(0, document.getElementById('quiz').offsetTop)
 }
 
 //Close incorrect answer div onClick
