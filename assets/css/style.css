@@ -25,7 +25,6 @@
     background-color: white;
     z-index: 9999;
     border: 0;
-    font-size: 7px !important;
     letter-spacing: 4px;
     border-radius: 0;
     padding: 7px;
@@ -81,12 +80,13 @@
     width: 50%;
 }
 
-#timer{
+#timer {
     font-size: x-large;
-    color:var(--denim);
-    width:max-content;
+    color: var(--denim);
+    width: max-content;
     margin: 0 auto;
 }
+
 /*header*/
 
 .left-about {
@@ -126,26 +126,26 @@ section {
 h1,
 #question {
     font-family: 'Lato', sans serif;
-    font-size: 2.3em;
+    font-size: 2.0em;
     color: var(--black);
     text-align: center;
     padding: 2%;
 }
 
 h2 {
-    font-size: 2.3em;
+    font-size: 1.8em;
 }
 
 li {
-
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1em;
 }
 
-#highScoresList {
+#highScoresList>li {
     margin: 0 auto;
     width: max-content;
     line-height: 3em;
+    font-size: 1.8em;
 }
 
 /*header*/
@@ -176,6 +176,10 @@ li {
     border-radius: 25px;
 }
 
+#quiz{
+    height:650px;
+}
+
 #score {
     font-family: 'Press Start 2P', cursive;
     font-size: xx-large;
@@ -198,12 +202,12 @@ a {
 a:hover {
     color: white !important;
     text-decoration: solid;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .button {
     font-size: 1.3em;
-    padding: 15px;
+    padding: 10px;
     width: 400px;
     background-color: var(--java);
     border-radius: 25px;
@@ -216,7 +220,7 @@ a:hover {
 
 .button:hover {
     transform: scale(1.1);
-    font-size:x-large;
+    font-size: x-large;
     color: white;
 }
 
@@ -279,6 +283,29 @@ a:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#progress {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#progress-text {
+    margin: 0 auto;
+    width: max-content;
+}
+
+#progressBar {
+  /*  width: 20rem;
+    height: 4rem;*/
+    border: 0.3rem solid var(--java);
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: var(--java);
+    width: 0%;
 }
 
 /* End page */

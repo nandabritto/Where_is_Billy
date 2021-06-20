@@ -1,23 +1,24 @@
-//const startButton = document.getElementById('start-button');
 const questionElement = document.getElementById('question');
 const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button');
-//const scoreButton = document.getElementById('score-button');
 const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
 const score = document.getElementById('score');
-
+const progressText = document.getElementById("progress-text");
+const progressBarFull = document.getElementById("progressBarFull");
 
 let currentQuestion;
 let shuffleQuestions;
 
+
+const MAX_QUESTIONS = 10;
+
 let scorePoints = 0;
 window.onload = function beginGame() {
-
     startQuiz()
 }
-//startButton.addEventListener('click', startQuiz);
+
 nextButton.addEventListener('click', () => {
     currentQuestion++;
     nextQuestion();
@@ -26,9 +27,6 @@ nextButton.addEventListener('click', () => {
 // When executed hide Start Button, shows Question container and Shuffle questions. 
 
 function startQuiz() {
-   // startButton.classList.add('hide');
-   // startQuestion.classList.add('hide');
-   // questionContainer.classList.remove('hide');
     shuffleQuestions = questionBank.sort(() => Math.random() - 0.5);
     currentQuestion = 0;
     nextQuestion();
@@ -36,33 +34,23 @@ function startQuiz() {
 
 // initialize page for new question.
 function nextQuestion() {
-  
     if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
-        myTimer()
+        myTimer();
     }
     if ((shuffleQuestions.length == currentQuestion)) {
-      //  const scoreButton = document.getElementById('score-button');
-        //scoreButton.classList.remove('hide');
-        localStorage.setItem("mostRecentScore", (scorePoints*100));
+        localStorage.setItem("mostRecentScore", (scorePoints * 100));
         window.location.assign('/end.html');
-       // nextButton.classList.add('hide');
     }
+
+    // update the progress text
+    progressText.innerText = `Question ${currentQuestion + 1}/${MAX_QUESTIONS}`;
+    //Update the progress bar
+    progressBarFull.style.width = `${(currentQuestion / MAX_QUESTIONS) * 100}%`;
     window.scrollTo(0, document.getElementById('quiz').offsetTop)
 }
 
-//Close incorrect answer div onClick
-function showNextButton() {
-    questionPopupElement.classList.add('hide');
-    
-
-    if (shuffleQuestions.length >= currentQuestion + 1) {
-        nextButton.classList.remove('hide');
-    } else {
-        window.location.assign('/end.html')}
-       // scoreButton.classList.remove('hide');
-}
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
     questionElement.innerText = pQuestion.question;
@@ -84,7 +72,6 @@ function showQuestion(pQuestion) {
 
 // Add hide on next button and clean buttons from previous question
 function resetQuestion() {
-   // nextButton.classList.add('hide');
     while (choiceButtons.firstChild) {
         choiceButtons.removeChild(choiceButtons.firstChild);
     }
@@ -98,49 +85,64 @@ function selectedAnswer(a) {
     if (correct) {
         this.classList.add('correct');
         scorePoints++;
-        //score.innerText = scorePoints;
     } else {
         this.classList.add('wrong');
+        wrongAnswer();
     }
-
     Array.from(choiceButtons.children).forEach(button => {
         button.disabled = true;
-    });
-
-    //show popup with correct answer and close it with a click
-    if (!correct) {
-        var modal = document.getElementById('myModal');
-        var span = document.getElementsByClassName('close')[0];
-        modal.style.display = "block";
-       // questionPopupElement.classList.remove('hide');
-        span.onclick = function () {
-            modal.style.display = "none"
-            showNextButton();
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none"
-                showNextButton();
-            }
-        }
-    }
-    //show nextbutton if the answer is correct
-    else {
-       // nextButton.classList.remove('hide');
-    }
+    })
 }
 
-var sec = 30;
-var time = setInterval(myTimer, 1000);
+function wrongAnswer() {
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName('close')[0];
+
+    modal.style.display = "block";
+    span.onclick = function () {
+        modal.style.display = "none"
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+        }
+           }
+}
+
+
+let timer;
 
 function myTimer() {
-    document.getElementById('timer').innerHTML = '<i class="far fa-clock"></i>'+' ' + sec + ' ' + "sec left";
-    sec--;
-    if (sec == -1) {
-        clearInterval(time);
-        alert("Time out!! :(");
+    if (timer) {
+        clearInterval(timer);
     }
+    let sec = 10;
+    timer = setInterval(function () {
+        document.getElementById('timer').innerHTML = '<i class="far fa-clock"></i>' + ' ' + sec + ' ' + "sec left";
+        sec--;
+        if (sec == -1) {
+            clearInterval(timer);
+            wrongAnswer();
+            Array.from(choiceButtons.children).forEach(button => {
+                button.disabled = true;
+            })
+
+        }
+    }, 1000)
 }
+
+// function myTimer() {
+//     var sec = 10;
+//     var time = setInterval(myTimer, 1000);
+//     document.getElementById('timer').innerHTML = '<i class="far fa-clock"></i>' + ' ' + sec + ' ' + "sec left";
+//     sec--;
+//     if (sec == -1) {
+//         clearInterval(time);
+//         alert("Time out!! :(");
+//         sec = 10;
+//         time = setInterval(myTimer, 1000);
+//     }
+// }
 
 // Question Bank
 const questionBank = [{

@@ -8,8 +8,8 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
 
-<!--Bootstrap navbar css-->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Bootstrap navbar css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,28 +18,29 @@
 
 <body>
 
-   
-  <nav class="navbar navbar-fixed-top">
-    <div>
-        <div class="navbar-header"><img class="navbar-img" src="assets/images/icon.jpg" alt="globe with touristic attractions">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
-                id="hamburger">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button> 
-            <a class="navbar-brand" href="index.html"> WHERE IS BILLY?</a>
-        </div>
-    
-                <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="highscores.html">HIGH SCORES</a></li>
 
-            </ul>
+    <nav class="navbar navbar-fixed-top">
+        <div>
+            <div class="navbar-header"><img class="navbar-img" src="assets/images/icon.jpg"
+                    alt="globe with touristic attractions">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    id="hamburger">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> WHERE IS BILLY?</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="highscores.html">HIGH SCORES</a></li>
+
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- game container-->
     <section>
@@ -59,8 +60,12 @@
                     <button class="button">Answer 4</button>
                 </div>
             </div>
+        </div>
 
-            
+        <div id="progress">
+            <div id="progress-text"></div>
+            <div id="progress-bar"></div>
+            <div id="progressBarFull"></div>
         </div>
         <div class="controls aligned">
             <button id="next-button" class="button"> <i class="fas fa-arrow-alt-right"></i>&nbspNext</a>
@@ -78,7 +83,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-   
+
 
 
     <!-- My JavaScript file-->
