@@ -83,8 +83,10 @@
 #timer {
     font-size: x-large;
     color: var(--denim);
-    width: max-content;
+    width: 200px;
+    border-radius: 35px;
     margin: 0 auto;
+    background: rgba(162, 190, 187, 0.9);
 }
 
 /*header*/
@@ -165,6 +167,10 @@ li {
 
 /* quiz container*/
 
+#game {
+    background: black url("/assets/images/background-visa.jpg");
+}
+
 .container {
     width: 80%;
     max-width: 600px;
@@ -185,13 +191,6 @@ li {
     height: 650px;
 }
 
-/*
-#score {
-    font-family: 'Press Start 2P', cursive;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-*/
 #start-button,
 #next-button {
     width: 200px;
@@ -304,7 +303,10 @@ a:hover {
 
 #progress-text {
     margin: 0 auto;
-    width: max-content;
+    width: 200px;
+    border-radius: 35px;
+    font-size: large;
+    background: rgba(162, 190, 187, 0.9);
 }
 
 #progressBar {
@@ -318,6 +320,8 @@ a:hover {
     height: 3.4rem;
     background-color: var(--java);
     width: 0%;
+    border-radius: 25px;
+    margin: 1%;
 }
 
 /* End page */
@@ -362,6 +366,7 @@ input::placeholder {
 
     /*quiz container */
 
+
     #question-image {
         width: 90%;
         margin: 0 5%;
@@ -375,7 +380,7 @@ input::placeholder {
 
         .navbar .navbar-brand {
             padding-top: 4%;
-            font-size: 1.7em;
+            font-size: 0.8em;
         }
 
         .navbar li a {
@@ -416,7 +421,12 @@ input::placeholder {
 
             margin: 3% auto;
         }
-
-
+#map{
+    width:100%;
+}
+        .modal-content {
+            width: 100%;
+            font-size: small;
+        }
     }
 }
