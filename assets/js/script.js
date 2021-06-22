@@ -1,20 +1,23 @@
 const questionElement = document.getElementById('question');
-const questionContainer = document.getElementById('quiz');
+//const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button');
-const startQuestion = document.getElementById('start-question');
+//const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
-const score = document.getElementById('score');
+//const score = document.getElementById('score');
 const progressText = document.getElementById("progress-text");
 const progressBarFull = document.getElementById("progressBarFull");
+
+//const clearScore = document.getElementById("clear-score");
+
 
 let currentQuestion;
 let shuffleQuestions;
 
 let scorePoints = 0;
 window.onload = function beginGame() {
-    startQuiz()
-}
+    startQuiz();
+};
 
 nextButton.addEventListener('click', () => {
     currentQuestion++;
@@ -46,7 +49,7 @@ function nextQuestion() {
     progressText.innerText = `Question ${currentQuestion + 1}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(currentQuestion / MAX_QUESTIONS) * 100}%`;
-   }
+}
 
 function initMap() {};
 
@@ -66,7 +69,7 @@ function showQuestion(pQuestion) {
         zoom: 15,
         mapTypeId: "satellite",
     });
-   
+
     new google.maps.Marker({
         position: {
             lat: parseFloat(pQuestion.lat),
@@ -151,6 +154,13 @@ function myTimer() {
         }
     }, 1000)
 }
+
+/*
+function clearScore() {
+    localStorage.clear();
+};
+clearScore.addEventListener('click', (clearScore));
+*/
 
 // Question Bank
 const questionBank = [{
@@ -322,7 +332,7 @@ const questionBank = [{
         image: 'assets/images/greatwallofchina.jpg',
         lat: '40.43158846365261',
         lng: '116.56465470556327',
-        mark: "Great Wall of China"        
+        mark: "Great Wall of China"
     },
     {
         question: "Today I'm astonished with this ivory-white marble Wonder of the Modern World. Where am I?",
@@ -346,7 +356,7 @@ const questionBank = [{
         image: 'assets/images/tajmahal.jpg',
         lat: '27.17529749537184',
         lng: '78.04214219716435',
-        mark: "Taj Mahal" 
+        mark: "Taj Mahal"
     },
     {
         question: "The Christ the Redeemer statue is really huge looking from here. And this view of the city is amazing! Can you guess in wich brazilian city am I?",
@@ -370,6 +380,6 @@ const questionBank = [{
         image: 'assets/images/christredeenmer.jpg',
         lat: '-22.9500099577984',
         lng: '-43.21904276251032',
-        mark: "Christ the Redeemer" 
+        mark: "Christ the Redeemer"
     }
 ];
