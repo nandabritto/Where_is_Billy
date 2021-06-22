@@ -42,20 +42,22 @@
         </div>
     </nav>
 
-    <section>
+    <section class="background">
         <!--Score container -->
-        <div class="container box">
-            <div id="end">
-                <h1 id="finalScore"></h1>
-                <!--Form to save score -->
-                <form>
-                    <input type="text" name="usename" placeholder= "Your name here" id="username" class="centered">
-                    <button type="submit" class="button" id="saveScoreBtn" onclick="saveHighScore(event)"><i
-                            class="fas fa-save"></i> &nbsp Save Score</button>
-                </form>
+        <div id="form-container">
+            <div class="container box">
+                <div id="end">
+                    <h1 id="finalScore"></h1>
+                    <!--Form to save score -->
+                    <form>
+                        <input type="text" name="usename" placeholder="Your name here" id="username" class="centered">
+                        <button type="submit" class="button" id="saveScoreBtn" onclick="saveHighScore(event)"><i
+                                class="fas fa-save"></i> &nbsp Save Score</button>
+                    </form>
+                </div>
+                <!-- Control button-->
+                <a class="button" href="/index.html"> <i class="fas fa-play"></i> &nbsp Play Again</a>
             </div>
-            <!-- Control button-->
-            <a class="button" href="/index.html"> <i class="fas fa-play"></i> &nbsp Play Again</a>
         </div>
     </section>
 
