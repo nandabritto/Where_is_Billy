@@ -46,8 +46,7 @@ function nextQuestion() {
     progressText.innerText = `Question ${currentQuestion + 1}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(currentQuestion / MAX_QUESTIONS) * 100}%`;
-    window.scrollTo(0, document.getElementById('quiz').offsetTop)
-}
+   }
 
 function initMap() {};
 
@@ -105,6 +104,7 @@ function selectedAnswer(a) {
 
     if (correct) {
         this.classList.add('correct');
+        //go to nextQuestion()
         scorePoints++;
     } else {
         this.classList.add('wrong');

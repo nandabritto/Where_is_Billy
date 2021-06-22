@@ -146,7 +146,6 @@ section {
 
 .button:hover {
     transform: scale(1.1);
-    font-size: x-large;
     color: white;
 }
 
@@ -208,12 +207,28 @@ a:hover {
 
 #quiz {
     height: 650px;
+    position: relative;
+}
+
+#question {
+    height: 150px;
+    padding: 0 auto;
 }
 
 #question-image {
     width: 100%;
     border-radius: 10px;
+    position: relative;
 }
+
+#choice-container {
+    padding: 5px 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5px;
+    left: 15%;
+}
+
 
 #progress {
     width: 50%;
@@ -221,26 +236,26 @@ a:hover {
 }
 
 #progress-text {
-    margin: 0 auto;
-    width: 200px;
+    margin: -20px auto;
+    width: 176px;
     border-radius: 35px;
-    font-size: large;
-    background: rgba(162, 190, 187, 0.9);
+    font-size: small;
 }
 
-#progressBar {
-    /*  width: 20rem;
-    height: 4rem;*/
-    border: 0.3rem solid var(--java);
-    margin-top: 1.5rem;
+#progress-bar {
+    border: 1px var(--genoa) solid;
+    height: 15px;
+    width: 80%;
+    border-radius: 25px;
+    margin: 25px auto 0 auto;
 }
 
 #progressBarFull {
-    height: 3.4rem;
+    height: 1.4rem;
     background-color: var(--java);
     width: 0%;
     border-radius: 25px;
-    margin: 1%;
+    margin: 0;
 }
 
 /* correct and wrong answers style */
@@ -360,24 +375,38 @@ input::placeholder {
 
     @media screen and (max-width: 700px) {
 
+        .container {
+            width: 95%;
+        }
+
         section {
+            margin-top: 70px;
+        }
+
+        section,
+        #question,
+        #map,
+        .navbar-header,
+        .modal-content,
+        .left-about,
+        .right-about {
             width: 100%;
         }
 
         .button {
-            width: 230px;
-            padding: 10px;
+            width: 260px;
+            padding: 2px;
         }
 
         /* navbar*/
 
-        .navbar-header {
-            width: 100%;
-        }
-
         .navbar .navbar-brand {
             padding-top: 4%;
             font-size: 0.8em;
+        }
+
+        .navbar-img {
+            height: 6vh;
         }
 
         .navbar li a {
@@ -390,13 +419,11 @@ input::placeholder {
 
         .left-about,
         .right-about {
-            width: 100%;
             float: left;
             padding-top: 0;
         }
 
         #start-button {
-
             margin: 3% auto;
         }
 
@@ -407,18 +434,48 @@ input::placeholder {
             width: 85%;
         }
 
-
-        #question {
-            font-size: 1.5em;
+        #timer {
+            font-size: large;
+            width: 140px;
         }
 
-        #map {
+        #quiz {
+            height: 465px;
+        }
+
+        #question {
+            font-size: 1.2em;
+            padding: 5px 0;
+            height: 100px;
+        }
+
+        #hint-image {
             width: 100%;
+        }
+
+        #choice-container {
+            left: 10%;
         }
 
         .modal-content {
-            width: 100%;
             font-size: small;
+        }
+
+        #progress {
+            width: 100%;
+        }
+
+
+        #progress-text {
+            margin: -20px auto;
+            width: 100px;
+            font-size: small;
+        }
+    }
+
+    @media screen and (max-width: 365px){
+        #choice-container {
+            left: 5%;
         }
     }
 }
