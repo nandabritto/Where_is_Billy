@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 
+
 h1,
 #question {
     font-family: 'Lato', sans serif;
@@ -37,6 +38,9 @@ li {
 
 section {
     margin-top: 100px;
+    background-image: url('/workspace/MS2/assets/images/charlesbridge.jpg');
+    width: 100%;
+    height: 500px;
 }
 
 .container {
@@ -359,7 +363,9 @@ input::placeholder {
     }
 
     /* navbar*/
-
+    .navbar-img {
+        height: 7vh;
+    }
     .navbar .navbar-brand {
         padding-top: 7%;
     }
@@ -369,6 +375,9 @@ input::placeholder {
     #question-image {
         width: 90%;
         margin: 0 5%;
+    }
+    #map{
+        width:80%;
     }
 
     /* media query for responsnive design  to smalls screens */
@@ -385,7 +394,6 @@ input::placeholder {
 
         section,
         #question,
-        #map,
         .navbar-header,
         .modal-content,
         .left-about,
