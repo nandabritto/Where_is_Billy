@@ -5,62 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Score</title>
 
+    <!--Favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <!--Bootstrap navbar css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!--My stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Score</title>
+
 
 </head>
 
 <body>
+    <!--Bootstrap collapsed navbar-->
     <nav class="navbar navbar-fixed-top">
         <div>
-            <div class="navbar-header"><img class="navbar-img" src="assets/images/icon.jpg" alt="globe with touristic attractions">
+            <div class="navbar-header"><img class="navbar-img" src="assets/images/icon.jpg"
+                    alt="globe with touristic attractions">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
                     id="hamburger">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button> 
+                </button>
                 <a class="navbar-brand" href="index.html"> WHERE IS BILLY?</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="highscores.html">HIGH SCORES</a></li>
-    
                 </ul>
             </div>
         </div>
     </nav>
+
     <section>
-    <div class="container box">
-        <div id="end">
-            <h1 id="finalScore"></h1>
-
-            <form>
-                <input type="text" name="usename" id="username">
-                <button type="submit" class="button" id="saveScoreBtn" onclick="saveHighScore(event)"><i
-                        class="fas fa-save"></i> &nbsp Save Score</button>
-            </form>
+        <!--Score container -->
+        <div class="container box">
+            <div id="end">
+                <h1 id="finalScore"></h1>
+                <!--Form to save score -->
+                <form>
+                    <input type="text" name="usename" id="username">
+                    <button type="submit" class="button" id="saveScoreBtn" onclick="saveHighScore(event)"><i
+                            class="fas fa-save"></i> &nbsp Save Score</button>
+                </form>
+            </div>
+            <!-- Control button-->
+            <a class="button" href="/index.html"> <i class="fas fa-play"></i> &nbsp Play Again</a>
         </div>
-
-        <a class="button" href="/index.html"> <i class="fas fa-play"></i> &nbsp Play Again</a>
-
-    </div>
-
-</section>
+    </section>
 
     <!--Bootstrap navbar JS and JQuery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-    
+    <!-- My JavaScript file-->
     <script src="assets/js/end.js"></script>
 </body>
 
