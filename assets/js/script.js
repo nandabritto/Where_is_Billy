@@ -49,7 +49,7 @@ function nextQuestion() {
     window.scrollTo(0, document.getElementById('quiz').offsetTop)
 }
 
-function initMap() {}
+function initMap() {};
 
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
