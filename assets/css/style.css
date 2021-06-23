@@ -72,7 +72,7 @@ section {
 
 .navbar-img {
     height: 5vh;
-    margin-left: 10px;
+    margin: 10px;
     float: left;
 }
 
@@ -199,7 +199,7 @@ a:hover {
 }
 
 #main-container {
-    padding-top: 2%;
+    padding-top: 20px;
 }
 
 #timer {
@@ -216,7 +216,7 @@ a:hover {
 }
 
 #hint-image {
-    width: 60%;
+    width: 73%;
     margin: 0 auto
 }
 
@@ -383,11 +383,6 @@ input::placeholder {
         font-size: 1.3em;
     }
 
-    /* navbar*/
-    .navbar .navbar-brand {
-        padding-top: 7%;
-    }
-
     /*game page*/
 
     #question-image {
@@ -436,9 +431,12 @@ input::placeholder {
         }
 
         /* navbar*/
+        .navbar {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
 
         .navbar .navbar-brand {
-            padding-top: 4%;
             font-size: 0.8em;
         }
 
@@ -515,8 +513,35 @@ input::placeholder {
     }
 
     @media screen and (max-width: 365px) {
+        #main-container {
+            padding-top: 10px;
+        }
+
+        section {
+            margin-top: 45px;
+        }
+
+        #timer {
+            font-size: small;
+            margin: 3px auto;
+        }
+        #quiz {
+            height: 400px;
+        }
+
+        #question {
+            font-size: 1em;
+            height: 75px;
+        }
+
+
+        .button {
+            font-size: 1.2em;
+        }
+
         #choice-container {
             left: 5%;
+            position: unset;
         }
     }
 }
