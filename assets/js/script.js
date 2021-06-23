@@ -1,8 +1,6 @@
 const questionElement = document.getElementById('question');
-//const questionContainer = document.getElementById('quiz');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button');
-//const startQuestion = document.getElementById('start-question');
 const questionPopupElement = document.getElementById('popup-incorrect');
 //const score = document.getElementById('score');
 const progressText = document.getElementById("progress-text");
@@ -42,7 +40,7 @@ function nextQuestion() {
     }
     if ((shuffleQuestions.length == currentQuestion) || currentQuestion >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", (scorePoints * 100));
-        window.location.assign('/end.html');
+        window.location.href= '../end.html';
     }
 
     // update the progress text
@@ -164,7 +162,7 @@ clearScore.addEventListener('click', (clearScore));
 
 // Question Bank
 const questionBank = [{
-        question: "I'll visit a famous volcano that detroyed 5 cities in AD 79 and until nowadays is one of the most dangerous volcanos in the world",
+        question: "I'll visit a famous volcano that detroyed 5 cities in AD 79 and until nowadays is one of the most dangerous in the world.",
         answers: [{
                 text: 'Mount Samalas - Indonesia',
                 correct: false
@@ -215,7 +213,7 @@ const questionBank = [{
     },
 
     {
-        question: "I'll finally visit the city where Antonio Gaudi's Holy Family Basilica is located!",
+        question: "I'll finally visit the city where Antonio Gaudi's Holy Family Basilica is located! This church is astonishing!",
         answers: [{
                 text: 'Madrid',
                 correct: false
@@ -311,7 +309,7 @@ const questionBank = [{
         mark: "FNB Stadium"
     },
     {
-        question: "The view of this place is amazing! I'm on the longest wall on Earth! Which country am I?",
+        question: "I'm on the longest wall on Earth! And I heard that we also can see it from space. Which country am I?",
         answers: [{
                 text: 'Japan',
                 correct: false
@@ -359,7 +357,7 @@ const questionBank = [{
         mark: "Taj Mahal"
     },
     {
-        question: "The Christ the Redeemer statue is really huge looking from here. And this view of the city is amazing! Can you guess in wich brazilian city am I?",
+        question: "The Christ the Redeemer statue is really huge looking from here. Can you guess in wich brazilian city am I?",
         answers: [{
                 text: 'Sao Paulo',
                 correct: false
