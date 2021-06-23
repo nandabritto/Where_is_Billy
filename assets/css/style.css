@@ -71,7 +71,7 @@ section {
 
 
 .navbar-img {
-    height: 7vh;
+    height: 5vh;
     margin-left: 10px;
     float: left;
 }
@@ -79,7 +79,7 @@ section {
 .navbar li a,
 .navbar .navbar-brand {
     color: var(--genoa) !important;
-    padding-top: 5%;
+    padding-top: 25px;
 }
 
 .navbar-nav li a:hover,
@@ -172,6 +172,11 @@ section {
 .right-about>img {
     width: 100%;
     padding-right: 5%;
+}
+
+.instruction-container {
+    padding: 0% 5%;
+    width: 50%;
 }
 
 /* game page style */
@@ -330,7 +335,7 @@ a:hover {
 /* End page style*/
 
 #form-container {
-    padding-top: 20%;
+    padding-top: 200px;
 }
 
 .box {
@@ -394,9 +399,19 @@ input::placeholder {
         width: 80%;
     }
 
+    /* end game page*/
+
+    #form-container {
+        padding-top: 100px;
+    }
+
     /* media query for responsnive design  to smalls screens */
 
     @media screen and (max-width: 700px) {
+
+        .background {
+            min-height: 600px;
+        }
 
         .container {
             width: 95%;
@@ -447,6 +462,10 @@ input::placeholder {
 
         #start-button {
             margin: 3% auto;
+        }
+
+        .instruction-container {
+            width: 100%;
         }
 
         /*game page*/

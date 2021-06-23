@@ -40,7 +40,7 @@ function nextQuestion() {
     }
     if ((shuffleQuestions.length == currentQuestion) || currentQuestion >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", (scorePoints * 100));
-        window.location.href= '../end.html';
+        window.location.href= 'MS2/end.html';
     }
 
     // update the progress text
