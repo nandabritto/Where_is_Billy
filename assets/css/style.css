@@ -37,15 +37,6 @@ li {
     text-align: center;
 }
 
-section {
-    margin-top: 88px;
-}
-/*
-.background {
-    background-image: url('../images/stamps-visa-background.jpg');
-    min-height: 100%;
-}
-*/
 .container {
     width: 80%;
     max-width: 600px;
@@ -55,8 +46,12 @@ section {
     align-items: center;
     background-color: rgba(162, 190, 187, 0.97);
     border-radius: 25px;
+    padding: 2%;
 }
 
+section {
+    margin-top: 1%;
+}
 
 /*navbar style */
 
@@ -299,7 +294,7 @@ a:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 20%;
     left: 0;
     top: 0;
     width: 100%;
@@ -385,9 +380,9 @@ input::placeholder {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size:x-small; 
-    background-color:white;         
-  }
+    font-size: x-small;
+    background-color: white;
+}
 
 
 /* media query to medium screens */
@@ -425,10 +420,6 @@ input::placeholder {
 
     .container {
         width: 95%;
-    }
-
-    section {
-        margin-top: 70px;
     }
 
     section,
@@ -525,6 +516,12 @@ input::placeholder {
         width: 100px;
         font-size: small;
     }
+
+    /* high scores page */
+
+    #highScoresList>li {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 365px) {
@@ -534,21 +531,13 @@ input::placeholder {
         padding-top: 18px;
     }
 
-    #main-container {
-        padding-top: 10px;
-    }
-
-    section {
-        margin-top: 45px;
-    }
-
     #timer {
         font-size: small;
         margin: 3px auto;
     }
 
     #quiz {
-        height: 400px;
+        height: 390px;
     }
 
     #question {

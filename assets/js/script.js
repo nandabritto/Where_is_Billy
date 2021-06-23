@@ -109,6 +109,7 @@ function resetQuestion() {
 function selectedAnswer(a) {
     const selectedButton = a.target;
     const correct = selectedButton.dataset.correct;
+    clearInterval(timer);
 
     if (correct) {
         this.classList.add('correct');
