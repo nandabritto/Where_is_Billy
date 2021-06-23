@@ -8,6 +8,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const MAX_HIGH_SCORES = 5;
 
 
+window.onload = document.body.style.backgroundImage = "url('assets/images/stamps-visa-background.jpg')";
 
 finalScore.innerText = mostRecentScore;
 

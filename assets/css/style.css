@@ -40,12 +40,12 @@ li {
 section {
     margin-top: 88px;
 }
-
+/*
 .background {
     background-image: url('../images/stamps-visa-background.jpg');
-    min-height: 850px;
+    min-height: 100%;
 }
-
+*/
 .container {
     width: 80%;
     max-width: 600px;
@@ -206,10 +206,6 @@ a:hover {
     align-items: center;
     width: max-content;
     margin: 0 auto;
-}
-
-#main-container {
-    padding-top: 20px;
 }
 
 #timer {
@@ -385,18 +381,13 @@ input::placeholder {
     font-size: 1.8em;
 }
 
-footer{
-    background-color: rgba(162, 190, 187,0.1);
-}
-
 .footer {
-    width: max-content;
-    padding: 7px;
-    font-size: x-small;
-    margin: 0 auto;
-   
-}
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size:x-small; 
+    background-color:white;         
+  }
 
 
 /* media query to medium screens */
@@ -426,162 +417,155 @@ footer{
     #form-container {
         padding-top: 100px;
     }
+}
 
-    /* media query for responsnive design  to smalls screens */
+/* media query for responsnive design  to smalls screens */
 
-    @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-        .background {
-            min-height: 600px;
-        }
-
-        .container {
-            width: 95%;
-        }
-
-        section {
-            margin-top: 70px;
-        }
-
-        section,
-        #question,
-        .navbar-header,
-        .modal-content,
-        .left-about,
-        .right-about {
-            width: 100%;
-        }
-
-        .button {
-            width: 260px;
-            padding: 2px;
-        }
-
-        /* navbar*/
-        .navbar {
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-        }
-
-        .navbar .navbar-brand {
-            font-size: 0.8em;
-        }
-
-        .navbar-img {
-            height: 6vh;
-        }
-
-        .navbar li a {
-            font-size: xx-small;
-            padding: 10px 0px 0px 20px;
-            font-weight: 600;
-        }
-
-        /* index page */
-
-        .left-about,
-        .right-about {
-            float: left;
-            padding-top: 0;
-        }
-
-        #start-button {
-            margin: 3% auto;
-        }
-
-        .instruction-container {
-            width: 100%;
-        }
-
-        /*game page*/
-
-        #start-container,
-        #quiz-container {
-            width: 85%;
-        }
-
-        #timer {
-            font-size: large;
-            width: 140px;
-        }
-
-        #quiz {
-            height: 465px;
-        }
-
-        #question {
-            font-size: 1.2em;
-            padding: 5px 0;
-            height: 100px;
-        }
-
-        #hint-image {
-            width: 100%;
-        }
-
-        #choice-container {
-            left: 10%;
-        }
-
-        .modal-content {
-            font-size: small;
-        }
-
-        #progress {
-            width: 100%;
-        }
-
-
-        #progress-text {
-            margin: -20px auto;
-            width: 100px;
-            font-size: small;
-        }
-
-        
+    .container {
+        width: 95%;
     }
 
-    @media screen and (max-width: 365px) {
+    section {
+        margin-top: 70px;
+    }
 
-        .navbar li a,
-        .navbar .navbar-brand {
-            padding-top: 18px;
-        }
+    section,
+    #question,
+    .navbar-header,
+    .modal-content,
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
 
-        .background {
-            min-height: 500px;
-        }
+    .button {
+        width: 260px;
+        padding: 2px;
+    }
 
-        #main-container {
-            padding-top: 10px;
-        }
+    /* navbar*/
+    .navbar {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 
-        section {
-            margin-top: 45px;
-        }
+    .navbar .navbar-brand {
+        font-size: 0.8em;
+    }
 
-        #timer {
-            font-size: small;
-            margin: 3px auto;
-        }
+    .navbar li a {
+        font-size: xx-small;
+        padding: 10px 0px 0px 20px;
+        font-weight: 600;
+    }
 
-        #quiz {
-            height: 400px;
-        }
+    /* index page */
 
-        #question {
-            font-size: 1em;
-            height: 75px;
-        }
+    .left-about,
+    .right-about {
+        float: left;
+        padding-top: 0;
+    }
+
+    #start-button {
+        margin: 3% auto;
+    }
+
+    .instruction-container {
+        width: 100%;
+    }
+
+    .instructions {
+        padding: 0;
+    }
+
+    /*game page*/
+
+    #start-container,
+    #quiz-container {
+        width: 85%;
+    }
+
+    #timer {
+        font-size: large;
+        width: 140px;
+    }
+
+    #quiz {
+        height: 465px;
+    }
+
+    #question {
+        font-size: 1.2em;
+        padding: 5px 0;
+        height: 100px;
+    }
+
+    #hint-image {
+        width: 85%;
+    }
+
+    #choice-container {
+        left: 10%;
+    }
+
+    .modal-content {
+        font-size: small;
+    }
+
+    #progress {
+        width: 100%;
+    }
 
 
-        .button {
-            font-size: 1.2em;
-        }
+    #progress-text {
+        margin: -20px auto;
+        width: 100px;
+        font-size: small;
+    }
+}
 
-        #choice-container {
-            left: 5%;
-            position: unset;
-        }
+@media screen and (max-width: 365px) {
+
+    .navbar li a,
+    .navbar .navbar-brand {
+        padding-top: 18px;
+    }
+
+    #main-container {
+        padding-top: 10px;
+    }
+
+    section {
+        margin-top: 45px;
+    }
+
+    #timer {
+        font-size: small;
+        margin: 3px auto;
+    }
+
+    #quiz {
+        height: 400px;
+    }
+
+    #question {
+        font-size: 1em;
+        height: 75px;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+
+    #choice-container {
+        left: 5%;
+        position: unset;
+    }
+
+    #progress-text {
+        font-size: x-small;
     }
 }

@@ -14,8 +14,15 @@ let shuffleQuestions;
 
 let scorePoints = 0;
 window.onload = function beginGame() {
+    background();
     startQuiz();
 };
+
+function background() {
+    document.body.style.backgroundImage = "url('assets/images/stamps-visa-background.jpg')";
+}
+
+
 
 nextButton.addEventListener('click', () => {
     currentQuestion++;
@@ -40,7 +47,7 @@ function nextQuestion() {
     }
     if ((shuffleQuestions.length == currentQuestion) || currentQuestion >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", (scorePoints * 100));
-        window.location.href= 'MS2/end.html';
+        window.location = "end.html";
     }
 
     // update the progress text
