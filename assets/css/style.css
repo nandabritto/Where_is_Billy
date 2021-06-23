@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,300;1,500&display=swap');
 
+
 :root {
     --genoa: #29726C;
     --denim: #0d6db7;
@@ -158,10 +159,17 @@ section {
 
 /* index page style */
 
+.introduction {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .left-about {
     width: 40%;
     float: left;
     padding: 5%;
+    margin-top: 7%;
 }
 
 .right-about {
@@ -174,9 +182,11 @@ section {
     padding-right: 5%;
 }
 
-.instruction-container {
-    padding: 0% 5%;
-    width: 50%;
+.instructions {
+    margin: 0% auto;
+    width: 80%;
+    clear: both;
+    padding: 5%;
 }
 
 /* game page style */
@@ -216,7 +226,7 @@ a:hover {
 }
 
 #hint-image {
-    width: 73%;
+    width: 60%;
     margin: 0 auto
 }
 
@@ -375,6 +385,19 @@ input::placeholder {
     font-size: 1.8em;
 }
 
+footer{
+    background-color: rgba(162, 190, 187,0.1);
+}
+
+.footer {
+    width: max-content;
+    padding: 7px;
+    font-size: x-small;
+    margin: 0 auto;
+   
+}
+
+
 
 /* media query to medium screens */
 
@@ -388,6 +411,10 @@ input::placeholder {
     #question-image {
         width: 90%;
         margin: 0 5%;
+    }
+
+    #hint-image {
+        width: 70%;
     }
 
     #map {
@@ -510,9 +537,21 @@ input::placeholder {
             width: 100px;
             font-size: small;
         }
+
+        
     }
 
     @media screen and (max-width: 365px) {
+
+        .navbar li a,
+        .navbar .navbar-brand {
+            padding-top: 18px;
+        }
+
+        .background {
+            min-height: 500px;
+        }
+
         #main-container {
             padding-top: 10px;
         }
@@ -525,6 +564,7 @@ input::placeholder {
             font-size: small;
             margin: 3px auto;
         }
+
         #quiz {
             height: 400px;
         }
