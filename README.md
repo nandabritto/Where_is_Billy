@@ -1,12 +1,10 @@
-# Where Am I?
+# Where is Billy?
 
-The goal of this project is ...
+Billy is terrible linking famous landmarks around the world and their locations. He really needs your help!
 
-<img src="">
+If you would like to test your geolocalization and landmarks knowledge, this game is for you!
 
-
-The deployed site can be viewed [here](https://nandabritto.github.io/MS2/index.html).
-
+Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy. 
 
 ## UX
 
@@ -14,26 +12,16 @@ The deployed site can be viewed [here](https://nandabritto.github.io/MS2/index.h
 
 + As a user, I want to…
 
-1.	
-2.	
-3.	
-4.	
-5.	
-6.	
-7.	
-8.	
-
-+ As a site owner, I want…
-
-1.	
-2.	
-3.	
-4.	
+1.	be able to easily navigate throughout the website and questions.
+2.	be able to see in which question I am answering and how many more I have;
+3.	be able to add my name and save my score;
+4.	be able to see the best 5 scores;
 
 ### 1. Strategy 
 
  * Project Purpose
-    *    
+
+    * 
     *
     *
     *
@@ -44,7 +32,7 @@ The deployed site can be viewed [here](https://nandabritto.github.io/MS2/index.h
  * I wanted a simple, straightforward UX experience.
  * I wanted my content to be clear. 
  * A site that is visually appealing on most devices.
- *
+
 
 ### 3. Structure
 
@@ -79,34 +67,42 @@ Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com
 # Navbar 
 
 + High Scores and Home 
+<div style="text-align:center"><img src="assets/images/readme_ screenshots/navbar_desktop.png"></div>
+
++ Colapsed navbar 
+
+<img src="assets/images/readme_ screenshots/navbar_mobile.png">
 
 # Introduction page 
 
-+ Play button
++ Game introduction
+<img src="assets/images/readme_ screenshots/introduction.png">
 
 + Game instruction
-
-<img src="">
+<img src="assets/images/readme_ screenshots/instructions.png">
 
 # Game Page 
 
-+ google maps api on wrong answer
-+ disable buttons when click an answer 
+question
+hint image
+disable buttons when click an answer 
 
-<img src="">
++ google maps api on wrong answer
+<img src="assets/images/readme_ screenshots/instructions.png">
 
 # End Game 
 + form to add name on score
 
+<img src="assets/images/readme_ screenshots/end_page.png">
+
 # High Scores
 
 + List of top 5 players
-+ go home button 
-   
-<img src="">
- 
-   
 
+<img src="assets/images/readme_ screenshots/high_scores_page.png">
+
+go home button - link to index
+   
 ## Future Features 
 
 I would like to add:
@@ -176,19 +172,19 @@ CSS validation results can be viewed [here]()
   - From the source section drop-down menu, select the Master Branch;
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found [here](https://nandabritto.github.io/MS1/).
+The live link can be found [here](https://nandabritto.github.io/MS2/).
 
 ### Forking the GitHub Repository:
 
 By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/nandabritto/MS1)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/nandabritto/MS2)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/nandabritto/MS1)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/nandabritto/MS2)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -230,14 +226,15 @@ All questions were modified to atend character and game characteristics.
 
 -	To the Code Institute course material, as the basis of all my knowledge is from here.
 -	To the Slack community as I have used the different channels to find answers to problems!
--  Stack Overflow as a valuable resource for solving a couple of issues.
--  [W3schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/) for general reference.
+- Stack Overflow as a valuable resource for solving a couple of issues.
+- [W3schools](https://www.w3schools.com/) for general reference.
 
 I would also like to thank:
 
+-	My husband Guilherme for all the support on stressfull moments, help to figure out some bugs and for reviewing everything. 
 -	My mentor Rahul Lakhanpal for his time, support and guidance.
 -	Code institute tutors, for help with several issues and bugs.
--	My husband Guilherme for all the support and help in some issues and for reviewing everything. 
+
 
 
 
