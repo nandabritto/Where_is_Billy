@@ -296,7 +296,7 @@ a:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 10%;
+    padding-top: 5%;
     left: 0;
     top: 0;
     width: 100%;
@@ -444,7 +444,7 @@ input::placeholder {
     .navbar .navbar-brand {
         padding-top: 18px;
     }
-    
+
     .navbar .navbar-brand {
         font-size: 0.8em;
     }
@@ -484,10 +484,6 @@ input::placeholder {
         font-size: large;
         width: 140px;
     }
-/*
-    #quiz {
-        height: 465px;
-    }*/
 
     #question {
         font-size: 1.2em;
@@ -504,7 +500,7 @@ input::placeholder {
     }
 
     .modal {
-        padding-top: 10%;
+        padding-top: 15%;
     }
 
     .modal-content {

@@ -239,7 +239,8 @@ const questionBank = [{
         correctText: "The Basílica de la Sagrada Família ('Basilica of the Holy Family'), also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by the Spanish architect Antoni Gaudí (1852–1926), his work on the building is part of a UNESCO World Heritage Site.",
         image: 'assets/images/holy-family.jpg',
         lat: '41.40363992828481',
-        lng: '2.1743505164382877'
+        lng: '2.1743505164382877',
+        mark: "The Basílica de la Sagrada Família"
     },
 
     {
@@ -385,5 +386,53 @@ const questionBank = [{
         lat: '-22.9500099577984',
         lng: '-43.21904276251032',
         mark: "Christ the Redeemer"
+    },
+    {
+        question: "My next stop is on the largest hot desert in the world! Do you know where am I going to?",
+        answers: [{
+                text: 'Atacama desert',
+                correct: false
+            },
+            {
+                text: 'Australian desert',
+                correct: false
+            },
+            {
+                text: 'Syrian Desert',
+                correct: false
+            }, {
+                text: 'Sahara desert',
+                correct: true
+            }
+        ],
+        correctText: "The Sahara is a desert on the African continent. With an area of 9,200,000 square kilometres (3,600,000 sq mi), it is the largest hot desert in the world and the third largest desert overall, smaller only than the deserts of Antarctica and the northern Arctic.The desert comprises much of North Africa, excluding the fertile region on the Mediterranean Sea coast, the Atlas Mountains of the Maghreb, and the Nile Valley in Egypt and Sudan. It stretches from the Red Sea in the east and the Mediterranean in the north to the Atlantic Ocean in the west, where the landscape gradually changes from desert to coastal plains. To the south, it is bounded by the Sahel, a belt of semi-arid tropical savanna around the Niger River valley and the Sudan Region of Sub-Saharan Africa. The Sahara can be divided into several regions, including the western Sahara, the central Ahaggar Mountains, the Tibesti Mountains, the Aïr Mountains, the Ténéré desert, and the Libyan Desert. ",
+        image: 'assets/images/saharadesert.jpg',
+        lat: '23.404993734379563',
+        lng: '25.904340951634286',
+        mark: "Sahara desert"
+    },
+    {
+    question: " I'll climb up the 393 steps into this famous monument. Which city am I now?",
+        answers: [{
+                text: 'New York',
+                correct: true
+            },
+            {
+                text: 'Washington',
+                correct: false
+            },
+            {
+                text: 'Las Vegas',
+                correct: false
+            }, {
+                text: 'Miami',
+                correct: false
+            }
+        ],
+        correctText: "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. he statue is a figure of Libertas, a robed Roman liberty goddess. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata inscribed JULY IV MDCCLXXVI (July 4, 1776 in Roman numerals), the date of the U.S. Declaration of Independence. A broken shackle and chain lie at her feet as she walks forward, commemorating the recent national abolition of slavery. After its dedication, the statue became an icon of freedom and of the United States, seen as a symbol of welcome to immigrants arriving by sea.",
+        image: 'assets/images/statueofliberty.jpg',
+        lat: '40.68934700180322',
+        lng: '-74.04454331728299',
+        mark: "Statue of Liberty"
     }
 ];
