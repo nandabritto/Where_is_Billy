@@ -5,8 +5,7 @@ const questionPopupElement = document.getElementById('popup-incorrect');
 //const score = document.getElementById('score');
 const progressText = document.getElementById("progress-text");
 const progressBarFull = document.getElementById("progressBarFull");
-
-//const clearScore = document.getElementById("clear-score");
+//const clearScoreButton = document.getElementById("clear-score");
 
 
 let currentQuestion;
@@ -21,8 +20,6 @@ window.onload = function beginGame() {
 function background() {
     document.body.style.backgroundImage = "url('assets/images/stamps-visa-background.jpg')";
 }
-
-
 
 nextButton.addEventListener('click', () => {
     currentQuestion++;
@@ -162,11 +159,12 @@ function myTimer() {
 }
 
 /*
-function clearScore() {
-    localStorage.clear();
-};
-clearScore.addEventListener('click', (clearScore));
+clearScoreButton.addEventListener('click', (
+    window.localStorage.clear()));
+
 */
+
+
 
 // Question Bank
 const questionBank = [{
