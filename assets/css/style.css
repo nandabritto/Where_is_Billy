@@ -40,12 +40,12 @@ li {
     width: 80%;
     max-width: 600px;
     display: flex;
-    margin: 1% auto;
+    margin: 5px auto;
     justify-content: center;
     align-items: center;
     background-color: rgba(162, 190, 187, 0.97);
     border-radius: 25px;
-    padding: 2%;
+    padding: 1%;
 }
 
 section {
@@ -135,9 +135,12 @@ section {
     font-weight: 400;
     background-color: #CD000B;
     color: white !important;
-    margin: 1% auto 10% auto;
+    margin: 10% auto;
 }
 
+#next-button {
+    margin: 1% auto 10% auto!important;
+}
 .button {
     font-size: 1.3em;
     padding: 10px;
@@ -227,19 +230,19 @@ a:hover {
 }
 
 #quiz {
-    height: fit-content;
     position: relative;
 }
 
 #question {
     height: 150px;
+    position: relative;
 }
 
 #question-image {
     width: 100%;
     border-radius: 10px;
     position: relative;
-}
+    }
 
 #choice-container {
     padding: 5px 0;
@@ -308,7 +311,7 @@ a:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 2% auto;
+    margin: 5% auto;
     padding: 5%;
     border: 1px solid #888;
     width: 80%;

@@ -5,7 +5,7 @@ The goal of this project is ...
 <img src="">
 
 
-The deployed site can be viewed [here]().
+The deployed site can be viewed [here](https://nandabritto.github.io/MS2/index.html).
 
 
 ## UX
@@ -76,29 +76,45 @@ Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com
 
 ## Existing Features 
 
-+ 
+# Navbar 
 
++ High Scores and Home 
+
+# Introduction page 
+
++ Play button
+
++ Game instruction
 
 <img src="">
 
-+ 
+# Game Page 
 
-
++ google maps api on wrong answer
++ disable buttons when click an answer 
 
 <img src="">
 
-+ 
+# End Game 
++ form to add name on score
 
-  3. 
+# High Scores
+
++ List of top 5 players
++ go home button 
    
 <img src="">
-
-   4. 
+ 
    
 
 ## Future Features 
 
-I would like to add a 
+I would like to add:
+
++ more questions to question bank and storage it on an API;
++ choose difficult option;
++ storage score data on external storage;
++ option to know more about the question even if user answer it correctly.
 
 ## Code Validation
 
@@ -189,6 +205,13 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
+All quiz questions were created based on two free night quiz webpages. The links can be founded here:
+
+[RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) %20 [Khon Kaen Quiz](https://www.kkquiz.com/category/landmarks/1)
+
+All questions were modified to atend character and game characteristics. 
+
++
 ### Media
 
 - All pictures and images used in this project are from [Depositphotos](https://depositphotos.com) and [freepik](https://www.freepik.com/home).
@@ -199,6 +222,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 + [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
 + [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM)] - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
 + [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
++ [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - Used to help with footer localization on pages.
 + [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/) - Used to help building collapsed navbar.
 
 

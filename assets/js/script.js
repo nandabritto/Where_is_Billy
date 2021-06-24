@@ -37,23 +37,28 @@ const MAX_QUESTIONS = 10;
 
 // initialize page for new question.
 function nextQuestion() {
+
+    if ((shuffleQuestions.length == currentQuestion) || currentQuestion == MAX_QUESTIONS) {
+        localStorage.setItem("mostRecentScore", (scorePoints * 100));
+        window.location = "end.html";
+    }
     if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
         myTimer();
     }
-    if ((shuffleQuestions.length == currentQuestion) || currentQuestion >= MAX_QUESTIONS) {
-        localStorage.setItem("mostRecentScore", (scorePoints * 100));
-        window.location = "end.html";
+    while (currentQuestion == 10){
+        nextButton.innerText = 'Score';
     }
+   
 
     // update the progress text
-    progressText.innerText = `Question ${currentQuestion + 1}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${currentQuestion+1}/${MAX_QUESTIONS}`;
     //Update the progress bar
-    progressBarFull.style.width = `${(currentQuestion / MAX_QUESTIONS) * 100}%`;
+    progressBarFull.style.width = `${((currentQuestion +1) / MAX_QUESTIONS) * 100}%`;
 }
 
-function initMap() {};
+function initMap() {}
 
 //Receive question with answers and outputs buttons for each answer
 function showQuestion(pQuestion) {
@@ -79,7 +84,7 @@ function showQuestion(pQuestion) {
         },
         map,
         title: (pQuestion.mark),
-    })
+    });
 
 
     pQuestion.answers.forEach(answer => {
@@ -118,7 +123,7 @@ function selectedAnswer(a) {
     }
     Array.from(choiceButtons.children).forEach(button => {
         button.disabled = true;
-    })
+    });
 }
 
 // Show correct answer after wrong click
@@ -128,13 +133,13 @@ function wrongAnswer() {
 
     modal.style.display = "block";
     span.onclick = function () {
-        modal.style.display = "none"
-    }
+        modal.style.display = "none";
+    };
     window.onclick = function (event) {
         if (event.target == modal) {
-            modal.style.display = "none"
+            modal.style.display = "none";
         }
-    }
+    };
 }
 
 // Add contdown function 
@@ -153,9 +158,9 @@ function myTimer() {
             wrongAnswer();
             Array.from(choiceButtons.children).forEach(button => {
                 button.disabled = true;
-            })
+            });
         }
-    }, 1000)
+    }, 1000);
 }
 
 /*
