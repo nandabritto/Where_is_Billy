@@ -20,7 +20,7 @@ h1,
     font-size: 2.0em;
     color: var(--black);
     text-align: center;
-    padding: 2%;
+    padding: 1%;
 }
 
 h2 {
@@ -299,7 +299,7 @@ a:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 5%;
+    padding-top: 80px;
     left: 0;
     top: 0;
     width: 100%;
@@ -311,7 +311,7 @@ a:hover {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 2% auto 10px;
     padding: 5%;
     border: 1px solid #888;
     width: 80%;
@@ -430,10 +430,13 @@ input::placeholder {
     section,
     #question,
     .navbar-header,
-    .modal-content,
     .left-about,
     .right-about {
         width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
     }
 
     .button {
@@ -490,7 +493,6 @@ input::placeholder {
 
     #question {
         font-size: 1.2em;
-        padding: 5px 0;
         height: 100px;
     }
 
@@ -534,10 +536,6 @@ input::placeholder {
     #timer {
         font-size: small;
         margin: 3px auto;
-    }
-
-    #quiz {
-        height: 390px;
     }
 
     #question {

@@ -47,9 +47,6 @@ function nextQuestion() {
         showQuestion(shuffleQuestions[currentQuestion]);
         myTimer();
     }
-    while (currentQuestion == 10){
-        nextButton.innerText = 'Score';
-    }
    
 
     // update the progress text
