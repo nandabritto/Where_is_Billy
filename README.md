@@ -233,6 +233,11 @@ function selectedAnswer(a) {
 
 ```
 
++ 11th question load 
+
+When the user clicks the nextButton on the last question (10th), it is correctly redirected to the end.html page, but a new question is also rendering. 
+This bug will be solved in the next version of the game. 
+
 + ClearStorage button 
 
 On the initial code is possible to find a clear storage button on the High Scores page. Were tried several functions and it was still not working properly. Then, this button was removed from HTML and this bug will be solved and the clear button will be added in future releases.
