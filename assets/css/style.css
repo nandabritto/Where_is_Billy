@@ -239,7 +239,7 @@ a:hover {
 }
 
 #question {
-    height: 150px;
+    height: 100px;
     position: relative;
 }
 
@@ -398,7 +398,7 @@ input::placeholder {
 /* media query to medium screens */
 
 @media screen and (max-width: 1024px) {
-    h2 {
+    h1 {
         font-size: 1.3em;
     }
 
@@ -498,7 +498,7 @@ input::placeholder {
 
     #question {
         font-size: 1.2em;
-        height: 100px;
+        height: 70px;
     }
 
     #hint-image {
@@ -545,7 +545,7 @@ input::placeholder {
 
     #question {
         font-size: 1em;
-        height: 75px;
+        height: 45px;
     }
 
     .button {
