@@ -186,7 +186,7 @@ const questionBank = [{
                 correct: false
             }
         ],
-        correctText: 'The eruption of Mount Vesuvius in AD 79 destroyed the Roman cities of Pompeii, Herculaneum, Oplontis and Stabiae, as well as several other settlements. Today, it is regarded as one of the most dangerous volcanoes in the world because of the population of 3,000,000 people living near enough to be affected by an eruption, with 600,000 in the danger zone, making it the most densely populated volcanic region in the world',
+        correctText: 'The eruption of Mount Vesuvius in AD 79 destroyed the Roman cities of Pompeii, Herculaneum, Oplontis and Stabiae, as well as several other settlements. Today, it is regarded as one of the most dangerous volcanoes in the world because of the population of 3,000,000 people living near enough to be affected by an eruption, with 600,000 in the danger zone, making it the most densely populated volcanic region in the world.',
         image: 'assets/images/vesuvius.jpg',
         lat: '40.822633855656974',
         lng: '14.425354516052282',
@@ -310,7 +310,7 @@ const questionBank = [{
                 correct: false
             }
         ],
-        correctText: "First National Bank Stadium or simply FNB Stadium, also known as Soccer City and The Calabash, is an association football (soccer) and Rugby union stadium located in Nasrec, bordering the Soweto area of Johannesburg, South Africa. It is located next to the South African Football Association headquarters (SAFA House) where both the FIFA offices and the Local Organising Committee for the 2010 FIFA World Cup were housed. Designed as the main association football stadium for the World Cup, the FNB Stadium became the largest stadium in Africa with a capacity of 94,736. However, its maximum capacity during the 2010 FIFA World Cup was 84,490 due to reserved seating for the press and other VIPs. The stadium is also known by its nickname 'The Calabash' due to its resemblance to the African pot or gourd.  ",
+        correctText: "First National Bank Stadium or simply FNB Stadium, also known as Soccer City and The Calabash, is an association football (soccer) and Rugby union stadium located in Nasrec, bordering the Soweto area of Johannesburg, South Africa. It is located next to the South African Football Association headquarters (SAFA House) where both the FIFA offices and the Local Organising Committee for the 2010 FIFA World Cup were housed. Designed as the main association football stadium for the World Cup, the FNB Stadium became the largest stadium in Africa with a capacity of 94,736. However, its maximum capacity during the 2010 FIFA World Cup was 84,490 due to reserved seating for the press and other VIPs. The stadium is also known by its nickname 'The Calabash' due to its resemblance to the African pot or gourd.",
         image: 'assets/images/soccercity.jpg',
         lat: '-26.23429494669922',
         lng: '27.98171125961432',
