@@ -1,6 +1,6 @@
-# Where is Billy?
+ Where is Billy?
 
-Billy is terrible linking famous landmarks around the world and their locations. He really needs your help!
+Billy is terrible at linking famous landmarks around the world and their locations. He needs your help!
 
 If you would like to test your geolocalization and landmarks knowledge, this game is for you!
 
@@ -12,11 +12,11 @@ Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy.
 
 + As a user, I would like to be able to …
 
-1.	easily navigate throughout the website and questions.
+1.  easily navigate throughout the website and questions.
 2.  see in which question I am answering and how many more I have;
-3.	add my name and save my score;
-4.	see how I rank on the High Scores.
-5.  quickly check the High Scores when coming back to game later on.
+3.  add my name and save my score;
+4.  see how I rank on the High Scores.
+5.  quickly check the High Scores when coming back to the game later on.
 
 ### 1. Strategy 
 
@@ -27,8 +27,8 @@ Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy.
 Project Goals
 
    + Provide a fun and interactive application;
-   + Test general peoplo knowledge about landmarks and places around the world;
-   + Allow user to los scores and compare with previews attempts.
+   + Test general people knowledge about landmarks and places around the world;
+   + Allow user to log scores and compare with previews attempts.
 
 
 ### 2. Scope
@@ -40,13 +40,13 @@ Project Goals
 
 ### 3. Structure
 
-*	A clear and simple layout is in place to ensure users can navigate in a inuitive way and have an easy experience.
+* A clear and simple layout is in place to ensure users can navigate intuitively and have an easy experience.
 
-* Navbar is fixed on top to facilitate user to navigate through pages easily. A small navigaton is the same on all pages to ensure easy navigation.
+* Navbar is fixed on top to facilitate user to navigate through pages easily. Small navigation is the same on all pages to ensure easy navigation.
 * Index page displays game and character introduction and instructions to the game. 
-* Game page effectively show one question, four answer options, countdown timer and progress bar and text to show what question you are on.
-* End game page can be found a for to add you name on your score. 
-* High Scores page shows ranking scores.	
+* Game page effectively shows one question, four answer options, countdown timer and progress bar and text to show what question you are on.
+* End game page can be found a for to add your name on your score. 
+* High Scores page shows ranking scores.  
 
 ### 4. Skeleton
 
@@ -60,7 +60,7 @@ Click to see wireframes:
 
 * Colours
 
-Colour squeme was generated using eye dropper plugin, to get one color from logo image, and [mycolor.space](https://mycolor.space/).
+The Colour scheme was generated using eye dropper plugin, to get one colour from the logo image, and [mycolor.space](https://mycolor.space/).
 
 <p align="center" width="100%">
   <img width="90%" src="assets/images/readme_ screenshots/color_pallete.png">
@@ -83,7 +83,7 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 
 # Navbar 
 
-+ Fixed Navbar with Home and High Scores button to aloow user easy access to all pages. 
++ Fixed Navbar with Home and High Scores button to allow the user easy access to all pages. 
 
 <p align="center" width="100%">
   <img width="90%" src="assets/images/readme_ screenshots/navbar_desktop.png">
@@ -117,7 +117,7 @@ When user got a wrong question, a modal shows a brief explanation about question
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/wrong_answer_explanation.png"></p>
 
-Google maps has all user controls available. 
+Google maps have all user controls available. 
 
 # End Game 
 
@@ -127,22 +127,22 @@ Google maps has all user controls available.
 
 # High Scores
 
-+ A list of top 5 players can be found and everytime user plays the game (on same device) the new score will be add. 
++ A list of top 5 players can be found and every time user plays the game (on the same device) the new score will be added. 
 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/high_scores_page.png"></p>
 
-There is also a go home button that lead user to index page after finish game and check high score list. 
+There is also a go home button that leads the user to the index page after finish the game and checks the high score list. 
    
 ## Future Features 
 
 I would like to add:
 
 + more questions to question bank and storage it on an API;
-+ choose difficult option;
++ choose a difficult option;
 + sound effects to enhance the user experience;
 + storage score data on external storage;
-+ option to know more about the question even if user answer it correctly.
++ option to know more about the question even if the user answers it correctly.
 
 ## Code Validation
 
@@ -171,7 +171,7 @@ I have tested both javascript files with the jshint and received warnings about 
 
 Reports can be found on links:
 
-[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; [end.js]() &nbsp; [highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
+[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; [end.js](assets/images/readme_ screenshots/jshind_end_report.png) &nbsp; [highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
 
 ### Manual Testing
 
@@ -181,7 +181,7 @@ Reports can be found on links:
 
    + Mobile
  
- Tested with Samsumg A30, Xiaomi Mi6, Xiaomi Mi8 and webpage works well. It responsive as intended and with no page deformations.
+ Tested with Xiaomi Mi6, Xiaomi Mi8 and webpage works well. It is responsive as intended and with no page deformations.
 
    + Mozilla Dev Tools
  
@@ -199,7 +199,72 @@ Reports can be found on links:
  
  ## Project Bugs and Solutions:
 
++ Timer 
 
+There was an issue with the countdown timer  - When the user clicks an answer (correct or not) timer did not stop and if the user didn't click the next button, the error container opened showing an explanation about the question that should open only if a wrong answer clicked. 
+I solve this bug by adding a clear interval on SelectedAnswer function. 
+
+```
+ 
+function selectedAnswer(a) {
+    const selectedButton = a.target;
+    const correct = selectedButton.dataset.correct;
+    clearInterval(timer);
+        if (correct) {
+        this.classList.add('correct');
+        scorePoints++;
+        // add class if incorrect
+    } else {
+        this.classList.add('wrong');
+        wrongAnswer();
+    }
+      Array.from(choiceButtons.children).forEach(button => {
+        button.disabled = true;
+    });
+}
+
+```
+
++ ClearStorage button 
+
+On the initial code is possible to find a clear storage button on the High Scores page. Were tried several functions and it was still not working properly. Then, this button was removed from HTML and this bug will be solved and the clear button will be added in future releases.
+
++ Game container in smaller screens
+
+During tests were noticed that on smaller screens (like iPhone 5) game page wasn't user friendly because the user needed to scroll down to click the next button or check google maps. This bug was solved adding special @media screen and (max-width: 365px).
+ 
+```
+
+@media screen and (max-width: 365px) {
+
+
+    #timer {
+        font-size: small;
+        margin: 3px auto;
+    }
+
+    #question {
+        font-size: 1em;
+        height: 75px;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+
+    #choice-container {
+        left: 5%;
+        position: unset;
+    }
+
+    #progress-text {
+        font-size: x-small;
+    }
+}
+
+```
+
+Click [here](assets/images/readme_ screenshots/bug_smallerscreens.png) to access this bug screenshots and [here](assets/images/readme_ screenshots/bug_smallerscreens.png) for solution after media screen adition. 
 
   ## Deployment
 
@@ -240,20 +305,20 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
-All quiz questions were created based on two free night quiz webpages. The links can be founded here:
+All quiz questions were created based on two free night quiz web pages. The links can be found here:
 
 [RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) %20 [Khon Kaen Quiz](https://www.kkquiz.com/category/landmarks/1)
 
-All questions were modified to atend character and game characteristics. 
+All questions were modified to attend character and game characteristics. 
 
 +
 ### Media
 
 - All pictures and images used in this project are from [Depositphotos](https://depositphotos.com) and [freepik](https://www.freepik.com/home).
 
-### Worked based in other code
+### Worked based on other code
 
-+ [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on website.
++ [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on the website.
 + [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
 + [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM)] - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
 + [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
@@ -263,16 +328,19 @@ All questions were modified to atend character and game characteristics.
 
 ### Acknowledgements
 
--	To the Code Institute course material, as the basis of all my knowledge is from here.
--	To the Slack community as I have used the different channels to find answers to problems!
+- To the Code Institute course material, as the basis of all my knowledge, is from here.
+- To the Slack community as I have used the different channels to find answers to problems!
 - Stack Overflow as a valuable resource for solving a couple of issues.
 - [W3schools](https://www.w3schools.com/) for general reference.
 
 I would also like to thank:
 
--	My husband Guilherme for all the support on stressfull moments, help to figure out some bugs and for reviewing everything. 
--	My mentor Rahul Lakhanpal for his time, support and guidance.
--	Code institute tutors, for help with several issues and bugs.
+- My husband Guilherme for all the support on stressful moments, help to figure out some bugs and for reviewing everything. 
+- My mentor Rahul Lakhanpal for his time, support and guidance.
+- Code institute tutors, for help with several issues and bugs.
+
+
+
 
 
 
