@@ -42,7 +42,7 @@ Project Goals
 
 *	A clear and simple layout is in place to ensure users can navigate in a inuitive way and have an easy experience.
 
-* Navbar is sticky to facilitate user to navigate through pages easily. A small navigaton is the same on all pages to ensure easy navigation.
+* Navbar is fixed on top to facilitate user to navigate through pages easily. A small navigaton is the same on all pages to ensure easy navigation.
 * Index page displays game and character introduction and instructions to the game. 
 * Game page effectively show one question, four answer options, countdown timer and progress bar and text to show what question you are on.
 * End game page can be found a for to add you name on your score. 
@@ -60,67 +60,79 @@ Click to see wireframes:
 
 * Colours
 
-The Images and text colour had contrasted the theme of the logo and website well.
-
+Colour squeme was generated using eye dropper plugin, to get one color from logo image, and [mycolor.space](https://mycolor.space/).
 
 <p align="center" width="100%">
   <img width="90%" src="assets/images/readme_ screenshots/color_pallete.png">
 </p>
 
+<p>
+  <img width="30px" src="assets/images/readme_ screenshots/color_pallete.png">
+Black color  was chosen to all game text and buttons, and also on footer text, to assure better readbility.</p>
+<p>
+  <img width="30px" src="assets/images/readme_ screenshots/white_color.png">
+White color was used on some buttons and navbar and footer background. </p>
+
 * Font Selection
  
-Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website. The chosen fonts were Montserrat for headings and Lato for lists and paragraphs.
+Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com/) to be used across the whole of the website.
 
-<img src="">
+The chosen fonts were Lato for headings, and navbar and Montserrat for lists, button and paragraphs.
 
 ## Existing Features 
 
 # Navbar 
 
-+ High Scores and Home 
++ Fixed Navbar with Home and High Scores button to aloow user easy access to all pages. 
 
 <p align="center" width="100%">
   <img width="90%" src="assets/images/readme_ screenshots/navbar_desktop.png">
 </p>
 
-+ Colapsed navbar 
-
++ Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
 <p align="center" width="100%">
   <img width="33%" src="assets/images/readme_ screenshots/navbar_mobile.png"></p>
 
 # Introduction page 
 
-+ Game introduction
++ Game introduction to allow user to know the main character and play buton to begin game.
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/introduction.png"></p>
 
-+ Game instruction
++ Shortly game instruction to assure that user can play the game without issues. 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/instructions.png"></p>
 
 # Game Page 
 
-question
-hint image
-disable buttons when click an answer 
+The game container has a contdown timer to limit answering time.
+<p align="center" width="100%">
+  <img width="33%" src="assets/images/readme_ screenshots/timer.png"></p>
 
-+ google maps api on wrong answer
-<img src="assets/images/readme_ screenshots/instructions.png">
+Each question has its own hint image to help user remember what landmark the question is linked. 
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/hint_image.png"></p>
+
+When user got a wrong question, a modal shows a brief explanation about question and the correct answer and a google maps with correct location. 
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/wrong_answer_explanation.png"></p>
+
+Google maps has all user controls available. 
 
 # End Game 
-+ form to add name on score
 
++ After answer all quiz questions, user can add name to rank score on High Scores page.
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/end_page.png"></p>
 
 # High Scores
 
-+ List of top 5 players
++ A list of top 5 players can be found and everytime user plays the game (on same device) the new score will be add. 
 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/high_scores_page.png"></p>
 
-go home button - link to index
+There is also a go home button that lead user to index page after finish game and check high score list. 
    
 ## Future Features 
 
@@ -153,7 +165,14 @@ CSS validation results can be viewed [here]()
             alt="Valid CSS!" />
     </a>
 
-     
++ JS
+
+I have tested both javascript files with the jshint and received warnings about unused or undefined variables. 
+
+Reports can be found on links:
+
+[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; [end.js]() &nbsp; [highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
+
 ### Manual Testing
 
    + Desktop

@@ -15,16 +15,18 @@
 }
 
 
-h1,h2, #question {
+h1,
+h2,
+#question {
     font-family: 'Lato', 'sans serif';
-    font-size: 2.0em;
+    font-size: 1.8em;
     color: var(--black);
     text-align: center;
     padding: 1%;
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
 li,
