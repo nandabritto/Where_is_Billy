@@ -1,4 +1,4 @@
- <h1> Where is Billy?</h1>
+<h1> Where is Billy?</h1>
 
 <p align=center>Billy is terrible at linking famous landmarks around the world and their locations. He needs your help!<br>
  If you would like to test your geolocalization and landmarks knowledge, this game is for you! </p>
@@ -87,19 +87,19 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 
 ## Existing Features 
 
-# Navbar 
+### Navbar 
 
 + Fixed Navbar with Home and High Scores button to allow the user easy access to all pages. 
 
 <p align="center" width="100%">
-  <img width="90%" src="assets/images/readme_screenshots/navbar_desktop.png">
+  <img width="33%" src="assets/images/readme_screenshots/navbar_desktop.png">
 </p>
 
 + Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
 <p align="center" width="100%">
   <img width="33%" src="assets/images/readme_screenshots/navbar_mobile.png"></p>
 
-# Introduction page 
+### Introduction page 
 
 + Game introduction to allow user to know the main character and play buton to begin game.
 <p align="center" width="100%">
@@ -109,7 +109,7 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_screenshots/instructions.png"></p>
 
-# Game Page 
+### Game Page 
 
 The game container has a contdown timer to limit answering time in 20 seconds.
 <p align="center" width="100%">
@@ -125,13 +125,13 @@ When user got a wrong question or time finished, a modal shows a brief explanati
 
 Google maps have all user controls available. 
 
-# End Game 
+### End Game 
 
 + After answer 10 quiz questions, user can add name to rank score on High Scores page.
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_screenshots/end_page.png"></p>
 
-# High Scores
+### High Scores
 
 + A list of top 5 players can be found and every time user plays the game (on the same device) the new score will be added on it. 
 
@@ -154,32 +154,32 @@ I would like to add:
 
 ### Languages Used
 
-    HTML5
-    CSS3
-    JQuery
-    JavaScript
+   + HTML5
+   + CSS3
+   + JQuery
+   + JavaScript
 
  ### Frameworks, Libraries & Programs Used
 
-    +   Balsamiq:
+   + Balsamiq:
         Balsamiq was used to create the wireframes during the design process.
-    + Bootstrap 4.6:
+   + Bootstrap 4.6:
         Bootstrap was used to assist with the navbar responsiveness.
-    + Favicon generator:
+   + Favicon generator:
         Used to create favicon used on the website.
-    + Font Awesome:
+   + Font Awesome:
         Font Awesome was used on all pages to add icons for aesthetic and UX purposes.
-    + jQuery:
+   + jQuery:
         JQuery came with Bootstrap to make the navbar responsive.
-    + Git
+   + Git
         Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-    + GitHub:
+   + GitHub:
         GitHub is used to store the projects code after being pushed from Git.
-    + Google Fonts:
+   + Google Fonts:
         Google fonts used to add fonts for aesthetic and UX purposes.
-    + Google Maps Platform APIs:
+   + Google Maps Platform APIs:
         Google Maps API was used to add map and pin on each explanation about locations explored on questions game.
-    + Grammarly:
+   + Grammarly:
         Used to correct any mistakes on readme and game text. 
 
 ## Code Validation
@@ -188,20 +188,22 @@ I would like to add:
 
    + HTML
 
-  Passing the HTML from all templates and base into the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
+  Passing the HTML from all templates and base into the W3C Markup Validator no errors or warnings have been found [W3C validator](https://validator.w3.org/).
   
   Code Validation results:
   
-[Index] () nbsp;
-[Game] ()nbsp;
-[End] ()nbsp;
-[High Scores]()
+[Index Page](assets/images/readme_screenshots/validation_index.png) <br>
+[Game Page](assets/images/readme_screenshots/validation_game.png) <br>
+[End Page](assets/images/readme_screenshots/validation_end.png) <br>
+[High Scores Page](assets/images/readme_screenshots/validation_index.png)
 
    + CSS
 
 No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
 
-CSS validation results can be viewed [here]()
+6 warnings were found on the validation process. Five of them about custom properties were used to ensure that DRY principle was upheld and all warnings concerns the root colours code and two about imported style sheet from Google Fonts. 
+
+CSS validation results can be viewed [here](assets/images/readme_screenshots/validation_css.png)
 
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -211,7 +213,7 @@ CSS validation results can be viewed [here]()
 
 + JS
 
-I have tested both javascript files with the jshint and received warnings about unused or undefined variables. 
+I have tested both javascript files with the jshint and no error were been found. 
 
 Reports can be found on links:
 
@@ -417,9 +419,6 @@ I would also like to thank:
 - My husband Guilherme for all the support on stressful moments, help to figure out some bugs and for reviewing everything. 
 - My mentor Rahul Lakhanpal for his time, support and guidance.
 - Code institute tutors, for help with several issues and bugs.
-
-
-
 
 
 
