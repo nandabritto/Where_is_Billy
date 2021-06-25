@@ -14,8 +14,8 @@
     box-sizing: border-box;
 }
 
-h1,
-#question {
+
+h1,h2, #question {
     font-family: 'Lato', 'sans serif';
     font-size: 2.0em;
     color: var(--black);
@@ -27,7 +27,9 @@ h2 {
     font-size: 1.8em;
 }
 
-li {
+li,
+a,
+p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
@@ -139,8 +141,9 @@ section {
 }
 
 #next-button {
-    margin: 1% auto 10% auto!important;
+    margin: 1% auto 10% auto !important;
 }
+
 .button {
     font-size: 1.3em;
     padding: 10px;
@@ -242,12 +245,12 @@ a:hover {
     width: 100%;
     border-radius: 10px;
     position: relative;
-    }
+}
 
 #choice-container {
     padding: 5px 0;
     margin: 0 auto;
- }
+}
 
 
 #progress {
@@ -445,7 +448,7 @@ input::placeholder {
     }
 
     /* navbar*/
-    
+
     .navbar li a,
     .navbar .navbar-brand {
         padding-top: 18px;
@@ -455,7 +458,7 @@ input::placeholder {
         font-size: 0.8em;
     }
 
-     .navbar li a {
+    .navbar li a {
         font-size: xx-small;
         padding: 10px 0px 0px 20px;
         font-weight: 600;
@@ -469,7 +472,7 @@ input::placeholder {
         padding-top: 0;
     }
 
-   
+
 
     .instruction-container {
         width: 100%;

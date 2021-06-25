@@ -5,7 +5,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-const MAX_HIGH_SCORES = 5;
+//const MAX_HIGH_SCORES = 5;
 
 
 window.onload = document.body.style.backgroundImage = "url('assets/images/stamps-visa-background.jpg')";
@@ -18,9 +18,7 @@ username.addEventListener('keyup', () => {
 
 saveHighScore = (e) => {
     e.preventDefault();
-    username.remove();
-    saveScoreBtn.remove();
-
+        
     const score = {
         score: mostRecentScore,
         name: username.value,

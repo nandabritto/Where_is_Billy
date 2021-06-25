@@ -62,7 +62,10 @@ Click to see wireframes:
 
 The Images and text colour had contrasted the theme of the logo and website well.
 
-<img src="" width="1000">
+
+<p align="center" width="100%">
+  <img width="90%" src="assets/images/readme_ screenshots/color_pallete.png">
+</p>
 
 * Font Selection
  
@@ -75,19 +78,25 @@ Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com
 # Navbar 
 
 + High Scores and Home 
-<div style="text-align:center"><img src="assets/images/readme_ screenshots/navbar_desktop.png"></div>
+
+<p align="center" width="100%">
+  <img width="90%" src="assets/images/readme_ screenshots/navbar_desktop.png">
+</p>
 
 + Colapsed navbar 
 
-<div style="text-align:center"><img src="assets/images/readme_ screenshots/navbar_mobile.png"></div>
+<p align="center" width="100%">
+  <img width="33%" src="assets/images/readme_ screenshots/navbar_mobile.png"></p>
 
 # Introduction page 
 
 + Game introduction
-<img src="assets/images/readme_ screenshots/introduction.png">
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/introduction.png"></p>
 
 + Game instruction
-<img src="assets/images/readme_ screenshots/instructions.png">
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/instructions.png"></p>
 
 # Game Page 
 
@@ -101,13 +110,15 @@ disable buttons when click an answer
 # End Game 
 + form to add name on score
 
-<img src="assets/images/readme_ screenshots/end_page.png">
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/end_page.png"></p>
 
 # High Scores
 
 + List of top 5 players
 
-<img src="assets/images/readme_ screenshots/high_scores_page.png">
+<p align="center" width="100%">
+  <img width="50%" src="assets/images/readme_ screenshots/high_scores_page.png"></p>
 
 go home button - link to index
    
