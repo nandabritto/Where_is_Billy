@@ -14,7 +14,6 @@
     box-sizing: border-box;
 }
 
-
 h1,
 h2,
 #question {
@@ -37,7 +36,7 @@ p {
 }
 
 p {
-    margin: 0 0 50px 0!important;
+    margin: 0 0 50px 0 !important;
 }
 
 .centered {
@@ -471,8 +470,6 @@ input::placeholder {
         float: left;
         padding-top: 0;
     }
-
-
 
     .instruction-container {
         width: 100%;
