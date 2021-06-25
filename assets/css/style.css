@@ -531,15 +531,19 @@ input::placeholder {
 
 @media screen and (max-width: 320px) {
     
+    h1{
+        padding-top: 0!important;
+    }
     .navbar .navbar-brand {
         font-size: 0.6em;
     }
 
-        .container {
+    .container {
         width: 95%;
     }
     #hint-image{
-            margin: 0 10%;
+        width:55%;
+        margin: 0 auto;
     }
     #timer {
         font-size: small;
