@@ -193,7 +193,7 @@ Reports can be found on links:
 
 The error and alerts for each page can be viewed on the links:
 
-[Index]() &nbsp; [End]() &nbsp; [Highscores]()
+[Index]() &nbsp; [End]() &nbsp; [Highscores](assets/images/readme_ screenshots/jshint_highscores_report.png)
 
    + Error
 
@@ -243,8 +243,24 @@ During tests were noticed that on smaller screens (like iPhone 5) game page wasn
  
 ```
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 320px) {
 
+    h1 {
+        padding-top: 0 !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 0.6em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #hint-image {
+        width: 55%;
+        margin: 0 auto;
+    }
 
     #timer {
         font-size: small;
@@ -253,11 +269,12 @@ During tests were noticed that on smaller screens (like iPhone 5) game page wasn
 
     #question {
         font-size: 1em;
-        height: 75px;
+        height: 45px;
     }
 
+
     .button {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #choice-container {

@@ -47,6 +47,7 @@ function nextQuestion() {
     if (shuffleQuestions.length >= currentQuestion + 1) {
         resetQuestion();
         showQuestion(shuffleQuestions[currentQuestion]);
+        window.scrollTo(0,50);
         myTimer();
     }
 

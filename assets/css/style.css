@@ -530,10 +530,11 @@ input::placeholder {
 }
 
 @media screen and (max-width: 320px) {
-    
-    h1{
-        padding-top: 0!important;
+
+    h1 {
+        padding-top: 0 !important;
     }
+
     .navbar .navbar-brand {
         font-size: 0.6em;
     }
@@ -541,10 +542,12 @@ input::placeholder {
     .container {
         width: 95%;
     }
-    #hint-image{
-        width:55%;
+
+    #hint-image {
+        width: 55%;
         margin: 0 auto;
     }
+
     #timer {
         font-size: small;
         margin: 3px auto;
@@ -555,7 +558,7 @@ input::placeholder {
         height: 45px;
     }
 
-    
+
     .button {
         font-size: 1em;
     }
