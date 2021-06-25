@@ -1,4 +1,4 @@
-<h1> Where is Billy?</h1>
+ <h1> Where is Billy?</h1>
 
 <p align=center>Billy is terrible at linking famous landmarks around the world and their locations. He needs your help!<br>
  If you would like to test your geolocalization and landmarks knowledge, this game is for you! </p>
@@ -54,9 +54,9 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click to see wireframes:
 
-[Index](assets/images/readme_screenshots/wireframegame_page.png) <br>
-[Game](assets/images/readme_screenshots/wireframegame_page.png) <br>
-[High_Score](assets/images/readme_screenshots/wireframegame_page.png)
+[Index Page](assets/images/readme_screenshots/wireframegame_page.png) <br>
+[Game Page](assets/images/readme_screenshots/wireframegame_page.png) <br>
+[High Score Page](assets/images/readme_screenshots/wireframegame_page.png)
 
 The end page was added later on project, on this way there's no wireframe of it.
 
@@ -67,7 +67,7 @@ The end page was added later on project, on this way there's no wireframe of it.
 The Colour scheme was generated using eye dropper plugin, to get one colour from the logo image, and [mycolor.space](https://mycolor.space/) to generate the colour pallete.
 
 <p align="center" width="100%">
-  <img width="90%" src="assets/images/readme_screenshots/color_pallete.png">
+  <img width="33%" src="assets/images/readme_screenshots/color_pallete.png">
 </p>
 
 
@@ -92,7 +92,7 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 + Fixed Navbar with Home and High Scores button to allow the user easy access to all pages. 
 
 <p align="center" width="100%">
-  <img width="33%" src="assets/images/readme_screenshots/navbar_desktop.png">
+  <img width="90%" src="assets/images/readme_screenshots/navbar_desktop.png">
 </p>
 
 + Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
@@ -138,7 +138,7 @@ Google maps have all user controls available.
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_screenshots/high_scores_page.png"></p>
 
-*There is also a go home button that leads the user to the index page after check the high score list.
++ There is also a go home button that leads the user to the index page after check the high score list.
    
 ## Future Features 
 
@@ -211,11 +211,9 @@ CSS validation results can be viewed [here](assets/images/readme_screenshots/val
             alt="Valid CSS!" />
     </a>
 
-+ JS
++ JavaScript
 
 I have tested both javascript files with the jshint and no error were been found. 
-
-The warning and two undefined variable found on script.js is concerned to Google maps API implementation. I'm working on to adress it on next version. 
 
 Reports can be found on links:
 
@@ -243,18 +241,18 @@ Reports can be found on links:
 
 The error and alerts for each page can be viewed on the links:
 
-[Index_page](assets/images/readme_screenshots/accessibilitytest_index.png) &nbsp;
-[Game_Page](assets/images/readme_screenshots/accessibilitytest_gamepage.png) &nbsp; 
-[End_Page](assets/images/readme_screenshots/accessibilitytest_endpage.png) &nbsp; 
-[Highscores](assets/images/readme_screenshots/accessibilitytest_highscorepage.png)
+[Index page](assets/images/readme_screenshots/accessibilitytest_index.png) &nbsp;
+[Game Page](assets/images/readme_screenshots/accessibilitytest_gamepage.png) &nbsp; 
+[End Page](assets/images/readme_screenshots/accessibilitytest_endpage.png) &nbsp; 
+[High scores Page](assets/images/readme_screenshots/accessibilitytest_highscorepage.png)
 
    + Error
 
-    - Empty button - A bootstrap navbar was used on this game, and, in smaller devices the navbar button have no text on it, just an icon to cick and revels navbar container. 
+   - Empty button - A bootstrap navbar was used on this game, and, in smaller devices the navbar button have no text on it, just an icon to cick and revels navbar container. 
 
  + Alerts
 
-    - The redundant link alert showed in all the pages was a design choice, to allow the user easy access (reload the page and go to the head).
+    - The redundant link alert showed in all the pages was a design choice, to allow the user easy access (reload the page).
     - The small texts alerts showed on all pages were used by design choice to footer and source credits for the texts.
 
  
@@ -346,7 +344,7 @@ During tests were noticed that on smaller screens (like iPhone 5) game page wasn
 
 ```
 
-Click [here](assets/images/readme_screenshots/bug_smallerscreens.png) to access this bug screenshots and [here](assets/images/readme_ screenshots/bug_smallerscreens.png) for solution after media screen adition. 
+Click [here](assets/images/readme_screenshots/bug_smallerscreens.png) to access this bug screenshots and [here](assets/images/readme_screenshots/bugsolved_smallerscreens.png) for solution after media screen adition. 
 
   ## Deployment
 
@@ -389,7 +387,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
  + All quiz questions were created based on two free night quiz web pages. The links can be found here:
 
-[RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) &nbsp;
+[RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) <br>
 [Khon Kaen Quiz](https://www.kkquiz.com/category/landmarks/1)
 
 Questions were modified to attend character and game characteristics. 
@@ -403,7 +401,7 @@ Questions were modified to attend character and game characteristics.
 ### Worked based on other code
 
 + [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
-+ [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM)] - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
++ [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM) - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
 + [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
 + [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - Used to help with footer localization on pages.
 + [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/) - Used to help building collapsed navbar.
@@ -421,6 +419,9 @@ I would also like to thank:
 - My husband Guilherme for all the support on stressful moments, help to figure out some bugs and for reviewing everything. 
 - My mentor Rahul Lakhanpal for his time, support and guidance.
 - Code institute tutors, for help with several issues and bugs.
+
+
+
 
 
 
