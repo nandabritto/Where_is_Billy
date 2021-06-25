@@ -54,9 +54,11 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click to see wireframes:
 
-[Index](assets/images/readme_screenshots/wireframes/index_page.png) nbsp;
-[Game](assets/images/readme_screenshots/wireframes/game_page.png) nbsp;
-[High_Score](assets/images/readme_screenshots/wireframes/high_scores_page.png)
+[Index](assets/images/readme_screenshots/wireframegame_page.png) <br>
+[Game](assets/images/readme_screenshots/wireframegame_page.png) <br>
+[High_Score](assets/images/readme_screenshots/wireframegame_page.png)
+
+The end page was added later on project, on this way there's no wireframe of it.
 
 ### 5. Surface
 
@@ -68,11 +70,13 @@ The Colour scheme was generated using eye dropper plugin, to get one colour from
   <img width="90%" src="assets/images/readme_screenshots/color_pallete.png">
 </p>
 
-<p>
-  <img width="40px" src="assets/images/readme_screenshots/black_color.png">
+
+<p><img width="30px" src="assets/images/readme_screenshots/black_color.png">
 Black color  was chosen to all game text and buttons, and also on footer text, to assure better readbility.</p>
+
+
 <p>
-  <img width="40px" src="assets/images/readme_screenshots/white_color.png">
+  <img width="30px" src="assets/images/readme_screenshots/white_color.png">
 White color was used on some buttons and navbar and footer background. </p>
 
 * Font Selection
@@ -413,6 +417,11 @@ I would also like to thank:
 - My husband Guilherme for all the support on stressful moments, help to figure out some bugs and for reviewing everything. 
 - My mentor Rahul Lakhanpal for his time, support and guidance.
 - Code institute tutors, for help with several issues and bugs.
+
+
+
+
+
 
 
 
