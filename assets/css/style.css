@@ -530,7 +530,12 @@ input::placeholder {
 }
 
 @media screen and (max-width: 320px) {
-    .container {
+    
+    .navbar .navbar-brand {
+        font-size: 0.6em;
+    }
+
+        .container {
         width: 95%;
     }
     #hint-image{
