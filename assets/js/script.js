@@ -384,8 +384,8 @@ const questionBank = [{
         ],
         correctText: "Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide.The statue weighs 635 metric tons, and is located at the peak of the 700-metre (2,300 ft) Corcovado mountain in the Tijuca Forest National Park overlooking the city of Rio de Janeiro. A symbol of Christianity across the world, the statue has also become a cultural icon of both Rio de Janeiro and Brazil, and was voted as one of the New Seven Wonders of the World. It is made of reinforced concrete and soapstone.",
         image: 'assets/images/christredeenmer.jpg',
-        lat: '-22.9500099577984',
-        lng: '-43.21904276251032',
+        lat: '-22.952204321770928',
+        lng: '-43.210365632163395',
         mark: "Christ the Redeemer"
     },
     {
