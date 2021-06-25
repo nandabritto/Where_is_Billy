@@ -1,10 +1,9 @@
- Where is Billy?
+ <h1> Where is Billy?</h1>
 
-Billy is terrible at linking famous landmarks around the world and their locations. He needs your help!
+<p align=center>Billy is terrible at linking famous landmarks around the world and their locations. He needs your help!<br>
+ If you would like to test your geolocalization and landmarks knowledge, this game is for you! </p>
 
-If you would like to test your geolocalization and landmarks knowledge, this game is for you!
-
-<img src="assets/images/readme_ screenshots/whereisbilly_mockup.png">
+<img src="assets/images/readme_screenshots/whereisbilly_mockup.png">
 
 Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy. 
 
@@ -35,8 +34,8 @@ Project Goals
 
 ### 2. Scope
 
- * I wanted a simple, straightforward intuitive UX experience
- * I wanted my content to be clear. 
+ * I wanted a simple, straightforward intuitive UX experience;
+ * I wanted my content to be clear; 
  * A site that is visually appealing on most devices.
 
 
@@ -55,9 +54,9 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click to see wireframes:
 
-[Index](assets/images/readme_ screenshots/wireframes/index_page.png) nbsp;
-[Game](assets/images/readme_ screenshots/wireframes/game_page.png) nbsp;
-[High_Score](assets/images/readme_ screenshots/wireframes/high_scores_page.png)
+[Index](assets/images/readme_screenshots/wireframes/index_page.png) nbsp;
+[Game](assets/images/readme_screenshots/wireframes/game_page.png) nbsp;
+[High_Score](assets/images/readme_screenshots/wireframes/high_scores_page.png)
 
 ### 5. Surface
 
@@ -66,14 +65,14 @@ Click to see wireframes:
 The Colour scheme was generated using eye dropper plugin, to get one colour from the logo image, and [mycolor.space](https://mycolor.space/) to generate the colour pallete.
 
 <p align="center" width="100%">
-  <img width="90%" src="assets/images/readme_ screenshots/color_pallete.png">
+  <img width="90%" src="assets/images/readme_screenshots/color_pallete.png">
 </p>
 
 <p>
-  <img width="40px" src="assets/images/readme_ screenshots/black_color.png">
+  <img width="40px" src="assets/images/readme_screenshots/black_color.png">
 Black color  was chosen to all game text and buttons, and also on footer text, to assure better readbility.</p>
 <p>
-  <img width="40px" src="assets/images/readme_ screenshots/white_color.png">
+  <img width="40px" src="assets/images/readme_screenshots/white_color.png">
 White color was used on some buttons and navbar and footer background. </p>
 
 * Font Selection
@@ -89,36 +88,36 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 + Fixed Navbar with Home and High Scores button to allow the user easy access to all pages. 
 
 <p align="center" width="100%">
-  <img width="90%" src="assets/images/readme_ screenshots/navbar_desktop.png">
+  <img width="90%" src="assets/images/readme_screenshots/navbar_desktop.png">
 </p>
 
 + Colapsed navbar on smaller devices to wrap in all options and assure better navbar design.
 <p align="center" width="100%">
-  <img width="33%" src="assets/images/readme_ screenshots/navbar_mobile.png"></p>
+  <img width="33%" src="assets/images/readme_screenshots/navbar_mobile.png"></p>
 
 # Introduction page 
 
 + Game introduction to allow user to know the main character and play buton to begin game.
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/introduction.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/introduction.png"></p>
 
 + Shortly game instruction to assure that user can play the game without doubts and easily. 
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/instructions.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/instructions.png"></p>
 
 # Game Page 
 
 The game container has a contdown timer to limit answering time in 20 seconds.
 <p align="center" width="100%">
-  <img width="33%" src="assets/images/readme_ screenshots/timer.png"></p>
+  <img width="33%" src="assets/images/readme_screenshots/timer.png"></p>
 
 Each question has its own hint image to help user remember what landmark the question is linked. 
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/hint_image.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/hint_image.png"></p>
 
 When user got a wrong question or time finished, a modal shows a brief explanation about the question and a google maps with correct location. 
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/wrong_answer_explanation.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/wrong_answer_explanation.png"></p>
 
 Google maps have all user controls available. 
 
@@ -126,14 +125,14 @@ Google maps have all user controls available.
 
 + After answer 10 quiz questions, user can add name to rank score on High Scores page.
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/end_page.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/end_page.png"></p>
 
 # High Scores
 
 + A list of top 5 players can be found and every time user plays the game (on the same device) the new score will be added on it. 
 
 <p align="center" width="100%">
-  <img width="50%" src="assets/images/readme_ screenshots/high_scores_page.png"></p>
+  <img width="50%" src="assets/images/readme_screenshots/high_scores_page.png"></p>
 
 *There is also a go home button that leads the user to the index page after check the high score list.
    
@@ -212,9 +211,9 @@ I have tested both javascript files with the jshint and received warnings about 
 
 Reports can be found on links:
 
-[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; 
-[end.js](assets/images/readme_ screenshots/jshind_end_report.png) &nbsp; 
-[highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
+[script.js](assets/images/readme_screenshots/jshint_script_report.png) &nbsp; 
+[end.js](assets/images/readme_screenshots/jshind_end_report.png) &nbsp; 
+[highscores.js](assets/images/readme_screenshots/jshint_highscores_report.png)
 
 ### Manual Testing
 
@@ -236,10 +235,10 @@ Reports can be found on links:
 
 The error and alerts for each page can be viewed on the links:
 
-[Index_page](assets/images/readme_ screenshots/accessibilitytest_index.png) &nbsp;
-[Game_Page](assets/images/readme_ screenshots/accessibilitytest_gamepage.png) &nbsp; 
-[End_Page](assets/images/readme_ screenshots/accessibilitytest_endpage.png) &nbsp; 
-[Highscores](assets/images/readme_ screenshots/accessibilitytest_highscorepage.png)
+[Index_page](assets/images/readme_screenshots/accessibilitytest_index.png) &nbsp;
+[Game_Page](assets/images/readme_screenshots/accessibilitytest_gamepage.png) &nbsp; 
+[End_Page](assets/images/readme_screenshots/accessibilitytest_endpage.png) &nbsp; 
+[Highscores](assets/images/readme_screenshots/accessibilitytest_highscorepage.png)
 
    + Error
 
@@ -339,7 +338,7 @@ During tests were noticed that on smaller screens (like iPhone 5) game page wasn
 
 ```
 
-Click [here](assets/images/readme_ screenshots/bug_smallerscreens.png) to access this bug screenshots and [here](assets/images/readme_ screenshots/bug_smallerscreens.png) for solution after media screen adition. 
+Click [here](assets/images/readme_screenshots/bug_smallerscreens.png) to access this bug screenshots and [here](assets/images/readme_ screenshots/bug_smallerscreens.png) for solution after media screen adition. 
 
   ## Deployment
 
@@ -414,11 +413,6 @@ I would also like to thank:
 - My husband Guilherme for all the support on stressful moments, help to figure out some bugs and for reviewing everything. 
 - My mentor Rahul Lakhanpal for his time, support and guidance.
 - Code institute tutors, for help with several issues and bugs.
-
-
-
-
-
 
 
 
