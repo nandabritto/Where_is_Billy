@@ -400,9 +400,10 @@ Questions were modified to attend character and game characteristics.
 
 ### Worked based on other code
 
-+ [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
++ [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) - Used to help with the first basic quiz function on JS. 
 + [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM) - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
 + [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
++ [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) - Used ti build a shuffleQuestion function and other functions on JS.
 + [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - Used to help with footer localization on pages.
 + [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/) - Used to help building collapsed navbar.
 
