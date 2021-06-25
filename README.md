@@ -215,6 +215,8 @@ CSS validation results can be viewed [here](assets/images/readme_screenshots/val
 
 I have tested both javascript files with the jshint and no error were been found. 
 
+The warning and two undefined variable found on script.js is concerned to Google maps API implementation. I'm working on to adress it on next version. 
+
 Reports can be found on links:
 
 [script.js](assets/images/readme_screenshots/jshint_script_report.png) &nbsp; 
