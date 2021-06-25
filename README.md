@@ -10,22 +10,26 @@ Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy.
 
 ### User Stories
 
-+ As a user, I want to…
++ As a user, I would like to be able to …
 
-1.	be able to easily navigate throughout the website and questions.
-2.	be able to see in which question I am answering and how many more I have;
-3.	be able to add my name and save my score;
-4.	be able to see the best 5 scores;
+1.	easily navigate throughout the website and questions.
+2.  see in which question I am answering and how many more I have;
+3.	add my name and save my score;
+4.	see how I rank on the High Scores.
+5.  quickly check the High Scores when coming back to game later on.
 
 ### 1. Strategy 
 
  * Project Purpose
 
-    * 
-    *
-    *
-    *
-    
+    Create an interactive quiz with consistent styling across all pages ensuring that the application runs flawlessly across all devices. 
+
+Project Goals
+
+   + Provide a fun and interactive application;
+   + Test general peoplo knowledge about landmarks and places around the world;
+   + Allow user to los scores and compare with previews attempts.
+
 
 ### 2. Scope
 
@@ -36,8 +40,13 @@ Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy.
 
 ### 3. Structure
 
-*	A clear layout is in place to ensure users can immediately find all the information.
-*	
+*	A clear and simple layout is in place to ensure users can navigate in a inuitive way and have an easy experience.
+
+* Navbar is sticky to facilitate user to navigate through pages easily. A small navigaton is the same on all pages to ensure easy navigation.
+* Index page displays game and character introduction and instructions to the game. 
+* Game page effectively show one question, four answer options, countdown timer and progress bar and text to show what question you are on.
+* End game page can be found a for to add you name on your score. 
+* High Scores page shows ranking scores.	
 
 ### 4. Skeleton
 
@@ -45,8 +54,7 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click to see wireframes:
 
-[]()
-
+[Index page](assets/images/readme_ screenshots/wireframes/index_page.png) %20 [Game page](assets/images/readme_ screenshots/wireframes/game_page.png) %20 [High Score Page](assets/images/readme_ screenshots/wireframes/high_scores_page.png)
 
 ### 5. Surface
 
@@ -71,7 +79,7 @@ Two complimentary fonts were chosen with [Google Fonts](https://fonts.google.com
 
 + Colapsed navbar 
 
-<img src="assets/images/readme_ screenshots/navbar_mobile.png">
+<div style="text-align:center"><img src="assets/images/readme_ screenshots/navbar_mobile.png"></div>
 
 # Introduction page 
 
@@ -109,6 +117,7 @@ I would like to add:
 
 + more questions to question bank and storage it on an API;
 + choose difficult option;
++ sound effects to enhance the user experience;
 + storage score data on external storage;
 + option to know more about the question even if user answer it correctly.
 

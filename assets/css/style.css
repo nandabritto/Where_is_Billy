@@ -371,7 +371,7 @@ input::placeholder {
 /* High Score page style*/
 
 #highscore-container {
-    padding-top: 10%;
+    padding-top: 200px;
 }
 
 #highScoresList>li {

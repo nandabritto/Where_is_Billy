@@ -2,25 +2,27 @@ const questionElement = document.getElementById('question');
 const choiceButtons = document.getElementById('choice-container');
 const nextButton = document.getElementById('next-button');
 const questionPopupElement = document.getElementById('popup-incorrect');
-//const score = document.getElementById('score');
 const progressText = document.getElementById("progress-text");
 const progressBarFull = document.getElementById("progressBarFull");
-//const clearScoreButton = document.getElementById("clear-score");
+
 
 
 let currentQuestion;
 let shuffleQuestions;
 
+// begin game 
 let scorePoints = 0;
 window.onload = function beginGame() {
     background();
     startQuiz();
 };
 
+//add backgrond to body
 function background() {
     document.body.style.backgroundImage = "url('assets/images/stamps-visa-background.jpg')";
 }
 
+// next button add next question
 nextButton.addEventListener('click', () => {
     currentQuestion++;
     nextQuestion();
@@ -47,7 +49,6 @@ function nextQuestion() {
         showQuestion(shuffleQuestions[currentQuestion]);
         myTimer();
     }
-   
 
     // update the progress text
     progressText.innerText = `Question ${currentQuestion+1}/${MAX_QUESTIONS}`;
@@ -74,6 +75,7 @@ function showQuestion(pQuestion) {
         mapTypeId: "satellite",
     });
 
+    // add markers on google maps
     new google.maps.Marker({
         position: {
             lat: parseFloat(pQuestion.lat),
@@ -83,7 +85,7 @@ function showQuestion(pQuestion) {
         title: (pQuestion.mark),
     });
 
-
+    // create buttons to answers and add text from question bank
     pQuestion.answers.forEach(answer => {
         const answerButton = document.createElement('button');
         answerButton.innerText = answer.text;
@@ -110,14 +112,17 @@ function selectedAnswer(a) {
     const correct = selectedButton.dataset.correct;
     clearInterval(timer);
 
+    // add class if correct
     if (correct) {
         this.classList.add('correct');
         //go to nextQuestion()
         scorePoints++;
+        // add class if incorrect
     } else {
         this.classList.add('wrong');
         wrongAnswer();
     }
+    // disable answer buttons
     Array.from(choiceButtons.children).forEach(button => {
         button.disabled = true;
     });
@@ -139,7 +144,7 @@ function wrongAnswer() {
     };
 }
 
-// Add contdown function 
+// Add contdown timer
 let timer;
 
 function myTimer() {
@@ -159,13 +164,6 @@ function myTimer() {
         }
     }, 1000);
 }
-
-/*
-clearScoreButton.addEventListener('click', (
-    window.localStorage.clear()));
-
-*/
-
 
 
 // Question Bank
@@ -414,7 +412,7 @@ const questionBank = [{
         mark: "Sahara desert"
     },
     {
-    question: " I'll climb up the 393 steps into this famous monument. Which city am I now?",
+        question: " I'll climb up the 393 steps into this famous monument. Which city am I now?",
         answers: [{
                 text: 'New York',
                 correct: true
