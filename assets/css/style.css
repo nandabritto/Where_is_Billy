@@ -404,8 +404,7 @@ input::placeholder {
     /*game page*/
 
     #question-image {
-        width: 90%;
-        margin: 0 5%;
+        width: 100%;
     }
 
     #hint-image {
@@ -426,10 +425,6 @@ input::placeholder {
 /* media query for responsnive design  to smalls screens */
 
 @media screen and (max-width: 700px) {
-
-    .container {
-        width: 95%;
-    }
 
     section,
     #question,
@@ -501,7 +496,7 @@ input::placeholder {
     }
 
     #hint-image {
-        width: 85%;
+        width: 80%;
     }
 
     #choice-container {
@@ -535,16 +530,12 @@ input::placeholder {
 }
 
 @media screen and (max-width: 320px) {
-    h1 {
-        margin-top: 5px;
-
+    .container {
+        width: 95%;
     }
-
-    .navbar,
-    .navbar-brand {
-        font-size: 0.7em;
+    #hint-image{
+            margin: 0 10%;
     }
-
     #timer {
         font-size: small;
         margin: 3px auto;
@@ -555,10 +546,7 @@ input::placeholder {
         height: 45px;
     }
 
-    #question-image {
-        width: 70%;
-    }
-
+    
     .button {
         font-size: 1em;
     }
