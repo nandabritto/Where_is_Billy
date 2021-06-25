@@ -376,7 +376,7 @@ By forking the GitHub Repository you will be able to make a copy of the original
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/nandabritto/MS2
 ```
 
 7. Press Enter. Your local clone will be created.
