@@ -66,7 +66,7 @@ function showQuestion(pQuestion) {
     const questionImage = document.getElementById("question-image");
     questionImage.src = pQuestion.image;
 
-    // add google maps api on wrong answer container
+    // add google maps api on wrong answer container 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: parseFloat(pQuestion.lat),
