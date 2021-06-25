@@ -191,11 +191,19 @@ Reports can be found on links:
  
  The entire website was verified about accessibility using [Wave](https://wave.webaim.org/). 
 
-   + Errors
+The error and alerts for each page can be viewed on the links:
+
+[Index]() &nbsp; [End]() &nbsp; [Highscores]()
+
+   + Error
+
+    - Empty button - A bootstrap navbar was used on this game, and, in smaller devices the navbar button have no text on it, just an icon to cick and revels navbar container. 
 
  + Alerts
 
-   - 
+    - The redundant link alert showed in all the pages was a design choice, to allow the user easy access (reload the page and go to the head).
+    - The small texts alerts showed on all pages were used by design choice to footer and source credits for the texts.
+
  
  ## Project Bugs and Solutions:
 

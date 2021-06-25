@@ -534,8 +534,16 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 320px) {
+    h1 {
+        margin-top: 5px;
 
+    }
+
+    .navbar,
+    .navbar-brand {
+        font-size: 0.7em;
+    }
 
     #timer {
         font-size: small;
@@ -547,8 +555,12 @@ input::placeholder {
         height: 45px;
     }
 
+    #question-image {
+        width: 70%;
+    }
+
     .button {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #choice-container {
