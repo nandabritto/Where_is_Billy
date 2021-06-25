@@ -4,6 +4,8 @@ Billy is terrible at linking famous landmarks around the world and their locatio
 
 If you would like to test your geolocalization and landmarks knowledge, this game is for you!
 
+<img src="assets/images/readme_ screenshots/whereisbilly_mockup.png">
+
 Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy. 
 
 ## UX
@@ -33,7 +35,7 @@ Project Goals
 
 ### 2. Scope
 
- * I wanted a simple, straightforward UX experience.
+ * I wanted a simple, straightforward intuitive UX experience
  * I wanted my content to be clear. 
  * A site that is visually appealing on most devices.
 
@@ -41,12 +43,11 @@ Project Goals
 ### 3. Structure
 
 * A clear and simple layout is in place to ensure users can navigate intuitively and have an easy experience.
-
-* Navbar is fixed on top to facilitate user to navigate through pages easily. Small navigation is the same on all pages to ensure easy navigation.
+* Navbar is fixed on top to facilitate users to navigate through pages easily. Small navigation is the same on all pages to ensure easy navigation.
 * Index page displays game and character introduction and instructions to the game. 
-* Game page effectively shows one question, four answer options, countdown timer and progress bar and text to show what question you are on.
-* End game page can be found a for to add your name on your score. 
-* High Scores page shows ranking scores.  
+* Game page effectively shows one question, four answer options, countdown timer, and progress bar and text to show what question you are on.
+* End game page can be found to add your name on your score. 
+* High Scores page shows ranking scores.
 
 ### 4. Skeleton
 
@@ -54,23 +55,25 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click to see wireframes:
 
-[Index page](assets/images/readme_ screenshots/wireframes/index_page.png) %20 [Game page](assets/images/readme_ screenshots/wireframes/game_page.png) %20 [High Score Page](assets/images/readme_ screenshots/wireframes/high_scores_page.png)
+[Index](assets/images/readme_ screenshots/wireframes/index_page.png) nbsp;
+[Game](assets/images/readme_ screenshots/wireframes/game_page.png) nbsp;
+[High_Score](assets/images/readme_ screenshots/wireframes/high_scores_page.png)
 
 ### 5. Surface
 
 * Colours
 
-The Colour scheme was generated using eye dropper plugin, to get one colour from the logo image, and [mycolor.space](https://mycolor.space/).
+The Colour scheme was generated using eye dropper plugin, to get one colour from the logo image, and [mycolor.space](https://mycolor.space/) to generate the colour pallete.
 
 <p align="center" width="100%">
   <img width="90%" src="assets/images/readme_ screenshots/color_pallete.png">
 </p>
 
 <p>
-  <img width="30px" src="assets/images/readme_ screenshots/color_pallete.png">
+  <img width="40px" src="assets/images/readme_ screenshots/black_color.png">
 Black color  was chosen to all game text and buttons, and also on footer text, to assure better readbility.</p>
 <p>
-  <img width="30px" src="assets/images/readme_ screenshots/white_color.png">
+  <img width="40px" src="assets/images/readme_ screenshots/white_color.png">
 White color was used on some buttons and navbar and footer background. </p>
 
 * Font Selection
@@ -99,13 +102,13 @@ The chosen fonts were Lato for headings, and navbar and Montserrat for lists, bu
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/introduction.png"></p>
 
-+ Shortly game instruction to assure that user can play the game without issues. 
++ Shortly game instruction to assure that user can play the game without doubts and easily. 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/instructions.png"></p>
 
 # Game Page 
 
-The game container has a contdown timer to limit answering time.
+The game container has a contdown timer to limit answering time in 20 seconds.
 <p align="center" width="100%">
   <img width="33%" src="assets/images/readme_ screenshots/timer.png"></p>
 
@@ -113,7 +116,7 @@ Each question has its own hint image to help user remember what landmark the que
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/hint_image.png"></p>
 
-When user got a wrong question, a modal shows a brief explanation about question and the correct answer and a google maps with correct location. 
+When user got a wrong question or time finished, a modal shows a brief explanation about the question and a google maps with correct location. 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/wrong_answer_explanation.png"></p>
 
@@ -121,18 +124,18 @@ Google maps have all user controls available.
 
 # End Game 
 
-+ After answer all quiz questions, user can add name to rank score on High Scores page.
++ After answer 10 quiz questions, user can add name to rank score on High Scores page.
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/end_page.png"></p>
 
 # High Scores
 
-+ A list of top 5 players can be found and every time user plays the game (on the same device) the new score will be added. 
++ A list of top 5 players can be found and every time user plays the game (on the same device) the new score will be added on it. 
 
 <p align="center" width="100%">
   <img width="50%" src="assets/images/readme_ screenshots/high_scores_page.png"></p>
 
-There is also a go home button that leads the user to the index page after finish the game and checks the high score list. 
+*There is also a go home button that leads the user to the index page after check the high score list.
    
 ## Future Features 
 
@@ -141,8 +144,40 @@ I would like to add:
 + more questions to question bank and storage it on an API;
 + choose a difficult option;
 + sound effects to enhance the user experience;
-+ storage score data on external storage;
++ external storage for ranking;
 + option to know more about the question even if the user answers it correctly.
+
+## Technologies Used
+
+### Languages Used
+
+    HTML5
+    CSS3
+    JQuery
+    JavaScript
+
+ ### Frameworks, Libraries & Programs Used
+
+    +   Balsamiq:
+        Balsamiq was used to create the wireframes during the design process.
+    + Bootstrap 4.6:
+        Bootstrap was used to assist with the navbar responsiveness.
+    + Favicon generator:
+        Used to create favicon used on the website.
+    + Font Awesome:
+        Font Awesome was used on all pages to add icons for aesthetic and UX purposes.
+    + jQuery:
+        JQuery came with Bootstrap to make the navbar responsive.
+    + Git
+        Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    + GitHub:
+        GitHub is used to store the projects code after being pushed from Git.
+    + Google Fonts:
+        Google fonts used to add fonts for aesthetic and UX purposes.
+    + Google Maps Platform APIs:
+        Google Maps API was used to add map and pin on each explanation about locations explored on questions game.
+    + Grammarly:
+        Used to correct any mistakes on readme and game text. 
 
 ## Code Validation
 
@@ -151,8 +186,14 @@ I would like to add:
    + HTML
 
   Passing the HTML from all templates and base into the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
+  
   Code Validation results:
   
+[Index] () nbsp;
+[Game] ()nbsp;
+[End] ()nbsp;
+[High Scores]()
+
    + CSS
 
 No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
@@ -171,7 +212,9 @@ I have tested both javascript files with the jshint and received warnings about 
 
 Reports can be found on links:
 
-[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; [end.js](assets/images/readme_ screenshots/jshind_end_report.png) &nbsp; [highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
+[script.js](assets/images/readme_ screenshots/jshint_script_report.png) &nbsp; 
+[end.js](assets/images/readme_ screenshots/jshind_end_report.png) &nbsp; 
+[highscores.js](assets/images/readme_ screenshots/jshint_highscores_report.png)
 
 ### Manual Testing
 
@@ -181,7 +224,7 @@ Reports can be found on links:
 
    + Mobile
  
- Tested with Xiaomi Mi6, Xiaomi Mi8 and webpage works well. It is responsive as intended and with no page deformations.
+ Tested with Xiaomi Mi6, Xiaomi Mi8, Samsung J8, Samsumg A30 and Iphone X and webpage works well. It is responsive as intended and with no page deformations.
 
    + Mozilla Dev Tools
  
@@ -193,7 +236,10 @@ Reports can be found on links:
 
 The error and alerts for each page can be viewed on the links:
 
-[Index]() &nbsp; [End]() &nbsp; [Highscores](assets/images/readme_ screenshots/jshint_highscores_report.png)
+[Index_page](assets/images/readme_ screenshots/accessibilitytest_index.png) &nbsp;
+[Game_Page](assets/images/readme_ screenshots/accessibilitytest_gamepage.png) &nbsp; 
+[End_Page](assets/images/readme_ screenshots/accessibilitytest_endpage.png) &nbsp; 
+[Highscores](assets/images/readme_ screenshots/accessibilitytest_highscorepage.png)
 
    + Error
 
@@ -277,7 +323,6 @@ During tests were noticed that on smaller screens (like iPhone 5) game page wasn
         height: 45px;
     }
 
-
     .button {
         font-size: 1em;
     }
@@ -335,20 +380,21 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
-All quiz questions were created based on two free night quiz web pages. The links can be found here:
+ + All quiz questions were created based on two free night quiz web pages. The links can be found here:
 
-[RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) %20 [Khon Kaen Quiz](https://www.kkquiz.com/category/landmarks/1)
+[RadioTimes](https://www.radiotimes.com/quizzes/pub-quiz-geography/) &nbsp;
+[Khon Kaen Quiz](https://www.kkquiz.com/category/landmarks/1)
 
-All questions were modified to attend character and game characteristics. 
+Questions were modified to attend character and game characteristics. 
 
-+
++ Text explanations about questions are from Wikipedia.  
+
 ### Media
 
 - All pictures and images used in this project are from [Depositphotos](https://depositphotos.com) and [freepik](https://www.freepik.com/home).
 
 ### Worked based on other code
 
-+ [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on the website.
 + [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) – Used to help with the first basic quiz function on JS. 
 + [James Q Quick Youtube Channel](https://www.youtube.com/watch?v=4bctmtuZVcM)] - Used to help with the many quiz function on JS (like timer, progress bar, etc). 
 + [W3 Schools](https://www.w3schools.com) - Used to help building several functions like [error popup](https://www.w3schools.com/howto/howto_js_popup.asp).
