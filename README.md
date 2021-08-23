@@ -5,7 +5,7 @@
 
 <img src="assets/images/readme_screenshots/whereisbilly_mockup.png">
 
-Click [here](https://nandabritto.github.io/MS2/index.html) to help Billy. 
+Click [here](https://nandabritto.github.io/Where_is_Billy/index.html) to help Billy. 
 
 ## UX
 
